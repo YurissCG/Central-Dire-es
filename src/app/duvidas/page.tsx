@@ -38,7 +38,8 @@ export default function PaginaDuvidas() {
           As perguntas que mais chegam pra oficina, respondidas direto.
         </p>
 
-        <Accordion type="single" collapsible className="mt-10 max-w-[68ch]">
+        <h2 className="mt-10 font-display text-h3 uppercase text-branco">Perguntas frequentes</h2>
+        <Accordion type="single" collapsible className="mt-4 max-w-[68ch]">
           {DUVIDAS.map((item) => (
             <AccordionItem key={item.slug} value={item.slug} className="border-grafite-borda">
               <AccordionTrigger className="text-corpo-lg text-branco hover:no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amarelo [&_svg]:text-amarelo">

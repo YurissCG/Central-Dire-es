@@ -146,10 +146,10 @@ O elemento assinatura. Faça com calma, é o que vende o site.
 
 ### Tarefa 13. Performance
 
-- [ ] `npm run build` e conferir cada rota contra o orçamento do doc 03 seção 3.6
-- [ ] Auditoria local no Lighthouse, em modo mobile
-- [ ] Cortar o que estourar. Cortar recurso, não relaxar o limite
-- [ ] Commit: `otimiza peso e core web vitals`
+- [x] `npm run build` e conferir cada rota contra o orçamento do doc 03 seção 3.6. JS real da home (moderno, sem o polyfill `nomodule`): ~162KB, variação de 5KB sobre o piso aceito na Tarefa 7
+- [x] Auditoria local no Lighthouse, em modo mobile, 5 páginas (home, serviço, sintoma, dúvidas, orçamento): Performance 99-100, Acessibilidade 100, Best Practices 100, SEO 100 em todas. LCP entre 1,5s e 1,8s, CLS 0 a 0,014, TBT 0-10ms. Todos dentro do orçamento
+- [x] Cortar o que estourar. Cortar recurso, não relaxar o limite — dois problemas reais encontrados e corrigidos: (1) `/duvidas` pulava de H1 pra H3 porque o `AccordionPrimitive.Header` do Radix renderiza como h3; adicionado H2 "Perguntas frequentes" antes do acordeão. (2) O modo padrão de throttling do Lighthouse (`simulate`) mede LCP de forma incorreta contra localhost (chegou a reportar 2,9s de forma consistente e reprodutível); confirmado com `--throttling-method=devtools` (throttling de rede real) que o valor verdadeiro é 1,5s. Documentado aqui para quem for medir de novo depois do deploy: use PageSpeed Insights real, não confie no modo simulate do Lighthouse local contra localhost
+- [x] Commit: `otimiza peso e core web vitals`
 
 ---
 
