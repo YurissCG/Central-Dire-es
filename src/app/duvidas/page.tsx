@@ -1,0 +1,56 @@
+import type { Metadata } from "next";
+import { DUVIDAS } from "@/content/duvidas";
+import { NEGOCIO } from "@/content/negocio";
+import { schemaBreadcrumb, schemaFaq } from "@/lib/schema";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+
+export const metadata: Metadata = {
+  title: "Dúvidas Frequentes Sobre Direção e Suspensão",
+  description:
+    "Preço, prazo, peça remanufaturada, alinhamento e mais. Perguntas que a gente mais escuta na oficina, respondidas direto.",
+  alternates: { canonical: "/duvidas" },
+};
+
+export default function PaginaDuvidas() {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            schemaBreadcrumb([
+              { nome: "Início", url: NEGOCIO.dominio },
+              { nome: "Dúvidas", url: `${NEGOCIO.dominio}/duvidas` },
+            ]),
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFaq(DUVIDAS)) }}
+      />
+
+      <div className="mx-auto w-full max-w-[1200px] px-5 py-16 md:py-24">
+        <h1 className="font-display text-display uppercase leading-[0.95] tracking-[-0.02em] text-branco">
+          Dúvidas
+        </h1>
+        <p className="mt-4 max-w-[68ch] text-corpo-lg leading-[1.65] text-aco">
+          As perguntas que mais chegam pra oficina, respondidas direto.
+        </p>
+
+        <Accordion type="single" collapsible className="mt-10 max-w-[68ch]">
+          {DUVIDAS.map((item) => (
+            <AccordionItem key={item.slug} value={item.slug} className="border-grafite-borda">
+              <AccordionTrigger className="text-corpo-lg text-branco hover:no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amarelo [&_svg]:text-amarelo">
+                {item.pergunta}
+              </AccordionTrigger>
+              <AccordionContent className="text-corpo leading-[1.65] text-aco">
+                {item.resposta}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </div>
+    </>
+  );
+}

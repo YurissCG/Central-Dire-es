@@ -116,12 +116,12 @@ O elemento assinatura. Faça com calma, é o que vende o site.
 
 ### Tarefa 10. Sobre, dúvidas, contato, orçamento
 
-- [ ] `/sobre` com a história e a equipe. Sem foto de banco fingindo ser a equipe, ver doc 09 seção 9.3
-- [ ] `/duvidas` com acordeão acessível, 10 a 15 perguntas reais
-- [ ] `/contato` com NAP, mapa, horário, botões de ligar e WhatsApp
-- [ ] `/orcamento` com formulário que monta a mensagem: nome, carro e ano, o que está acontecendo, serviço desejado. Validação em cliente, sem envio para servidor, abre o `wa.me`
-- [ ] `not-found.tsx` que ajuda de verdade, com os links principais
-- [ ] Commit: `adiciona paginas institucionais e de orcamento`
+- [x] `/sobre` com a história e a equipe. Sem foto de banco fingindo ser a equipe, ver doc 09 seção 9.3 — sem nome de equipe nem ano de fundação (ambos pendentes em `dados/negocio.json`), foco no diferencial confirmado (setor próprio de remanufatura) e na prova social real
+- [x] `/duvidas` com acordeão acessível, 10 a 15 perguntas reais (11 perguntas; usei o `Accordion` padrão do shadcn/radix, animação via CSS, não o "Motion FAQs Accordion" do Unlumen, pra não reintroduzir o custo de `motion` cortado na Tarefa 7)
+- [x] `/contato` com NAP, mapa, horário, botões de ligar e WhatsApp
+- [x] `/orcamento` com formulário que monta a mensagem: nome, carro e ano, o que está acontecendo, serviço desejado. Validação em cliente (HTML5 `required`), sem envio para servidor, abre o `wa.me`
+- [x] `not-found.tsx` que ajuda de verdade, com os links principais
+- [x] Commit: `adiciona paginas institucionais e de orcamento`
 
 ---
 

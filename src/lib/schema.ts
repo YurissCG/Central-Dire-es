@@ -90,3 +90,18 @@ export function schemaBreadcrumb(itens: { nome: string; url: string }[]) {
     })),
   };
 }
+
+export function schemaFaq(perguntas: readonly { pergunta: string; resposta: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: perguntas.map((item) => ({
+      "@type": "Question",
+      name: item.pergunta,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.resposta,
+      },
+    })),
+  };
+}

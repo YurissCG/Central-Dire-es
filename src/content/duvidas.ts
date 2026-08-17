@@ -62,6 +62,20 @@ export const DUVIDAS = [
       "Quando o carro continua balançando depois de passar por um buraco, quando range ou faz barulho seco na suspensão, ou quando o pneu está com desgaste irregular em manchas. Amortecedor gasto também aumenta a distância de frenagem, não é só questão de conforto.",
     servicoRelacionado: "suspensao",
   },
+  {
+    slug: "como-agendar-um-horario",
+    pergunta: "Como agendar um horário?",
+    resposta:
+      "Não precisa de agendamento pra passar na oficina dentro do horário de funcionamento, mas se quiser garantir horário certo, principalmente pra revisão antes de viagem, dá pra combinar pelo WhatsApp antes.",
+    servicoRelacionado: "revisao-preventiva",
+  },
+  {
+    slug: "atende-carro-de-aplicativo-ou-frota",
+    pergunta: "Vocês atendem carro de aplicativo ou frota?",
+    resposta:
+      "Sim. Carro de aplicativo e de frota passam pela mesma inspeção e o mesmo cuidado com prazo, porque carro parado é prejuízo pra quem trabalha com ele.",
+    servicoRelacionado: "revisao-preventiva",
+  },
 ] as const;
 
 export type Duvida = (typeof DUVIDAS)[number];
