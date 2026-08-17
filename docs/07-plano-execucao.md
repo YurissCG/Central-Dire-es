@@ -50,14 +50,14 @@ Marque os checkboxes conforme avança. Não pule fase: a fase 2 depende de token
 
 ### Tarefa 4. Layout base
 
-- [ ] `Header`: logo, navegação, botão de WhatsApp. Menu mobile em drawer, com foco preso dentro e fechamento por Escape
-- [ ] `Footer`: NAP completo, horário, redes, cidades atendidas, link para o Google
-- [ ] `BarraWhatsApp`: barra fixa no rodapé em mobile, com "Falar no WhatsApp" e "Ligar". Esconder quando o painel de diagnóstico estiver na tela, para não competir
-- [ ] Link "pular para o conteúdo" como primeiro elemento focável
-- [ ] `metadata` base no layout conforme doc 05 seção 5.2
-- [ ] JSON-LD de `AutoRepair` e `WebSite` no layout
-- [ ] Testar navegação inteira só com Tab
-- [ ] Commit: `adiciona header, footer e barra fixa de contato`
+- [x] `Header`: logo, navegação, botão de WhatsApp. Menu mobile em drawer, com foco preso dentro e fechamento por Escape (logo em texto, Barlow Condensed; o arquivo de logo processado ainda não existe, ver `assets-marca/LEIA-ME.md`)
+- [x] `Footer`: NAP completo, horário, redes, cidades atendidas, link para o Google
+- [x] `BarraWhatsApp`: barra fixa no rodapé em mobile, com "Falar no WhatsApp" e "Ligar". Esconder quando o painel de diagnóstico estiver na tela, para não competir (observa `#painel-diagnostico`, criado na Tarefa 6)
+- [x] Link "pular para o conteúdo" como primeiro elemento focável
+- [x] `metadata` base no layout conforme doc 05 seção 5.2
+- [x] JSON-LD de `AutoRepair` e `WebSite` no layout
+- [x] Testar navegação inteira só com Tab
+- [x] Commit: `adiciona header, footer e barra fixa de contato`
 
 ---
 

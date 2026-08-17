@@ -4,7 +4,7 @@ import { linkWhatsApp } from "@/lib/whatsapp";
 
 export default function Home() {
   return (
-    <main className="mx-auto flex w-full max-w-[1200px] flex-col gap-8 px-5 py-16">
+    <div className="mx-auto flex w-full max-w-[1200px] flex-col gap-8 px-5 py-16">
       <p className="etiqueta text-amarelo">São Benedito, Santa Luzia, MG</p>
       <h1 className="font-display text-display uppercase leading-[0.92] tracking-[-0.02em] text-branco">
         Direção pesada
@@ -31,6 +31,6 @@ export default function Home() {
         <a href={linkWhatsApp("home-teste")}>Falar no WhatsApp</a>
       </Button>
       <div className="faixa-zebrada" />
-    </main>
+    </div>
   );
 }
