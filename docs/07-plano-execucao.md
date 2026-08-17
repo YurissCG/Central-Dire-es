@@ -65,11 +65,11 @@ Marque os checkboxes conforme avança. Não pule fase: a fase 2 depende de token
 
 ### Tarefa 5. Hero
 
-- [ ] Copy exata do doc 04 seção 4.4
-- [ ] Imagem de fundo com tratamento do doc 09 seção 9.5, `priority`
-- [ ] Dois CTAs, e a linha de dados em mono
-- [ ] Conferir LCP: o h1 precisa ser o maior elemento e aparecer sem esperar JavaScript
-- [ ] Commit: `adiciona hero da home`
+- [x] Copy exata do doc 04 seção 4.4
+- [x] Imagem de fundo com tratamento do doc 09 seção 9.5, `priority` (Unsplash, camada 1 temporária, crédito em `public/fotos/temporarias/CREDITOS.md`)
+- [x] Dois CTAs, e a linha de dados em mono
+- [x] Conferir LCP: o h1 é Server Component, HTML puro sem esperar JS; imagem com `priority`. Medição fina de LCP fica para a Tarefa 13
+- [x] Commit: `adiciona hero da home`
 
 ### Tarefa 6. Painel de Diagnóstico
 
