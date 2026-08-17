@@ -129,12 +129,12 @@ O elemento assinatura. Faça com calma, é o que vende o site.
 
 ### Tarefa 11. Arquivos de indexação
 
-- [ ] `app/robots.ts`
-- [ ] `app/sitemap.ts` lendo as listas de `src/content`
-- [ ] `public/llms.txt` a partir de `templates/llms.txt`, com as URLs finais
-- [ ] `manifest.webmanifest`, favicon e apple-touch-icon a partir do logo
-- [ ] Conferir `/robots.txt` e `/sitemap.xml` no navegador depois do build
-- [ ] Commit: `adiciona robots, sitemap, llms.txt e manifest`
+- [x] `app/robots.ts`
+- [x] `app/sitemap.ts` lendo as listas de `src/content` (24 URLs: 7 estáticas + 7 serviços + 10 sintomas)
+- [x] `public/llms.txt` a partir de `templates/llms.txt`, com as URLs finais (completado com os 2 sintomas que faltavam no template)
+- [x] `manifest.webmanifest`, favicon e apple-touch-icon a partir do logo. Descobri que `assets-marca/logo-central-direcoes-original.png` já tinha transparência real (o LEIA-ME.md dizia "fundo branco", desatualizado); recortei o círculo, gerei `favicon.ico` (16/32/48, só roda+chaves sem o texto, que fica ilegível em 16px) e `apple-icon.png` (180px, com o texto, fundo preto-oficina)
+- [x] Conferir `/robots.txt` e `/sitemap.xml` no navegador depois do build
+- [x] Commit: `adiciona robots, sitemap, llms.txt e manifest`
 
 ### Tarefa 12. Metadata e Open Graph
 
