@@ -12,9 +12,9 @@ Marque os checkboxes conforme avança. Não pule fase: a fase 2 depende de token
 
 ## Fase 0. Verificação de contexto
 
-- [ ] Ler `CLAUDE.md` e todos os arquivos de `docs/`
-- [ ] Confirmar o domínio a ser usado. Sem domínio definido, use `https://centraldirecoes.com.br` como placeholder e registre em um único lugar, `src/content/negocio.ts`, para a troca ser de uma linha
-- [ ] Conferir Node 20 ou superior
+- [x] Ler `CLAUDE.md` e todos os arquivos de `docs/`
+- [x] Confirmar o domínio a ser usado. Sem domínio definido, use `https://centraldirecoes.com.br` como placeholder e registre em um único lugar, `src/content/negocio.ts`, para a troca ser de uma linha
+- [x] Conferir Node 20 ou superior
 
 ---
 
@@ -22,22 +22,22 @@ Marque os checkboxes conforme avança. Não pule fase: a fase 2 depende de token
 
 ### Tarefa 1. Criar o projeto
 
-- [ ] `npx create-next-app@latest . --typescript --tailwind --app --eslint --src-dir --import-alias "@/*"`
-- [ ] Remover boilerplate: conteúdo padrão de `page.tsx`, `globals.css` e as imagens de exemplo em `public/`
-- [ ] `npx shadcn@latest init`
-- [ ] Configurar o registry `@unlumen-ui` em `components.json` conforme o doc 02 seção 2.7
-- [ ] `npm run dev` sobe sem erro
-- [ ] Commit: `inicia projeto next com tailwind e shadcn`
+- [x] `npx create-next-app@latest . --typescript --tailwind --app --eslint --src-dir --import-alias "@/*"`
+- [x] Remover boilerplate: conteúdo padrão de `page.tsx`, `globals.css` e as imagens de exemplo em `public/`
+- [x] `npx shadcn@latest init`
+- [x] Configurar o registry `@unlumen-ui` em `components.json` conforme o doc 02 seção 2.7
+- [x] `npm run dev` sobe sem erro
+- [x] Commit: `inicia projeto next com tailwind e shadcn`
 
 ### Tarefa 2. Tokens e tipografia
 
-- [ ] `src/app/globals.css` com o bloco `@theme` completo do doc 02 seção 2.2
-- [ ] Utilitários: `.faixa-zebrada`, `.etiqueta` (mono caixa alta com tracking), `.superficie` (grafite com borda 1px)
-- [ ] Fontes em `src/app/layout.tsx` via `next/font/google`: Barlow Condensed 600 e 700, IBM Plex Sans 400, 500 e 600, IBM Plex Mono 500. Expor como variável CSS
-- [ ] `lang="pt-BR"` no `<html>`
-- [ ] Bloco de `prefers-reduced-motion` no CSS global
-- [ ] Página de teste com h1, h2, parágrafo, etiqueta, botão e faixa zebrada. Olhar em 360px e em 1440px
-- [ ] Commit: `adiciona tokens de cor, tipografia e utilitarios base`
+- [x] `src/app/globals.css` com o bloco `@theme` completo do doc 02 seção 2.2
+- [x] Utilitários: `.faixa-zebrada`, `.etiqueta` (mono caixa alta com tracking), `.superficie` (grafite com borda 1px)
+- [x] Fontes em `src/app/layout.tsx` via `next/font/google`: Barlow Condensed 600 e 700, IBM Plex Sans 400, 500 e 600, IBM Plex Mono 500. Expor como variável CSS
+- [x] `lang="pt-BR"` no `<html>`
+- [x] Bloco de `prefers-reduced-motion` no CSS global
+- [x] Página de teste com h1, h2, parágrafo, etiqueta, botão e faixa zebrada. Olhar em 360px e em 1440px
+- [x] Commit: `adiciona tokens de cor, tipografia e utilitarios base`
 
 ### Tarefa 3. Conteúdo tipado
 
