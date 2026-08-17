@@ -1,0 +1,9 @@
+# Referência apenas. O arquivo servido em produção é gerado por src/app/robots.ts.
+# Site institucional pequeno, sem área restrita. Nada a bloquear.
+# Nunca bloquear CSS ou JS: isso impede o Google de renderizar a página.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://SEU-DOMINIO.com.br/sitemap.xml
+Host: https://SEU-DOMINIO.com.br
