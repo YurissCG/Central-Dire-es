@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: PaginaProps): Promise<Metadat
   if (!servico) return {};
 
   return {
-    title: `${servico.titulo} | Central Direções`,
+    title: servico.titulo,
     description: `${servico.resumo} Fale no WhatsApp: ${NEGOCIO.contato.telefonePrincipalFormatado}.`,
     alternates: { canonical: `/servicos/${servico.slug}` },
   };

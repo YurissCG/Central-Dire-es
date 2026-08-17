@@ -109,10 +109,10 @@ O elemento assinatura. Faça com calma, é o que vende o site.
 
 ### Tarefa 9. Sintomas
 
-- [ ] `/sintomas` como índice
-- [ ] `/sintomas/[slug]`, oito páginas: h1 na forma da pergunta, resposta direta, causas prováveis, o que fazer agora, quando é urgente, link para o serviço relacionado, CTA
-- [ ] Link cruzado entre sintoma e serviço nos dois sentidos
-- [ ] Commit: `adiciona paginas de sintoma`
+- [x] `/sintomas` como índice
+- [x] `/sintomas/[slug]`, **dez** páginas (não oito, mesma discrepância do doc 03/07 já registrada na Tarefa 8: `dados/sintomas.json` e `palavras-chave.md` camada 3 sempre tiveram os 10 sintomas, incluindo os 2 com `noPainel: false`. Total do site sobe para 23 páginas): h1 na forma da pergunta, resposta direta (130-170 palavras, todas conferidas), causas prováveis, o que fazer agora, quando é urgente, link para o serviço relacionado, CTA
+- [x] Link cruzado entre sintoma e serviço nos dois sentidos (serviço → sintomas na Tarefa 8, sintoma → serviço aqui)
+- [x] Commit: `adiciona paginas de sintoma`
 
 ### Tarefa 10. Sobre, dúvidas, contato, orçamento
 

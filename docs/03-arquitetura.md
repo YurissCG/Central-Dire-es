@@ -79,13 +79,13 @@ Rota em português, sem acento, em kebab-case. URL é parte do SEO e nunca muda 
 | `/servicos/freios` | comercial | freio santa luzia |
 | `/servicos/revisao-preventiva` | serviço de entrada, ticket baixo | revisão preventiva santa luzia |
 | `/sintomas` | índice do diagnóstico | problemas na direção do carro |
-| `/sintomas/[slug]` | 8 páginas de cauda longa, uma por sintoma | ver `dados/palavras-chave.md` |
+| `/sintomas/[slug]` | 10 páginas de cauda longa, uma por sintoma | ver `dados/palavras-chave.md` |
 | `/sobre` | prova de que existe gente de verdade atrás disso, base de E-E-A-T | quem somos |
 | `/duvidas` | perguntas reais, alimenta busca com IA | quanto custa arrumar direção hidráulica |
 | `/contato` | endereço, mapa, horário, telefones | oficina de direção são benedito |
 | `/orcamento` | formulário que monta a mensagem de WhatsApp | orçamento direção hidráulica |
 
-Total de 21 páginas estáticas (`dados/servicos.json` tem 7 serviços, incluindo `revisao-preventiva`, que não estava nesta tabela na versão original do documento). Nunca gere página programática além dessa lista, por causa da política de doorway page do Google.
+Total de 23 páginas estáticas (`dados/servicos.json` tem 7 serviços e `dados/sintomas.json` tem 10 sintomas, contra os 6 e 8 que a versão original deste documento previa; ver `dados/palavras-chave.md` camada 3, que sempre listou os 10). Nunca gere página programática além dessa lista, por causa da política de doorway page do Google.
 
 ## 3.4 Convenções de código
 

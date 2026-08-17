@@ -10,7 +10,20 @@
     "explicacao": "Volante pesado quase sempre vem do sistema hidráulico. As causas mais comuns são nível baixo ou fluido velho, correia da bomba folgada, bomba perdendo pressão e caixa de direção com desgaste interno. Em carro com direção elétrica, também pode ser sensor ou o próprio módulo.",
     "urgencia": "Média. Dirigir com direção pesada aumenta o esforço em manobra e piora rápido. Se ficou pesado de um dia para o outro, olhe antes de rodar.",
     "servicoRelacionado": "direcao-hidraulica",
-    "curto": "volante pesado"
+    "curto": "volante pesado",
+    "respostaDireta": "Se o volante ficou pesado, principalmente pra fazer manobra ou estacionar, o problema quase sempre está no sistema de direção hidráulica. As causas mais comuns são nível baixo ou fluido velho, correia da bomba folgada ou gasta, a bomba perdendo pressão, ou a caixa de direção com desgaste interno. Em carro com direção elétrica assistida, sem bomba nem fluido, o motivo costuma ser sensor ou o próprio módulo eletrônico. Vale notar se o peso apareceu de repente, de um dia pro outro, ou se foi piorando aos poucos, isso ajuda a diferenciar entre um problema pontual e um desgaste gradual. Antes de qualquer coisa, dá pra checar o nível do fluido no reservatório, que às vezes resolve sozinho. Se continuar pesado, o ideal é levar pra inspeção antes que o esforço extra force outros componentes da direção.",
+    "causasComuns": [
+      "Nível de fluido baixo ou fluido velho",
+      "Correia da bomba folgada ou gasta",
+      "Bomba de direção perdendo pressão",
+      "Caixa de direção com desgaste interno",
+      "Sensor ou módulo, em carro com direção elétrica"
+    ],
+    "oQueFazerAgora": [
+      "Confira o nível do fluido no reservatório, é rápido e às vezes resolve",
+      "Preste atenção se o peso apareceu de repente ou foi piorando aos poucos",
+      "Observe se tem barulho junto com o peso, isso ajuda no diagnóstico"
+    ]
   },
   {
     "slug": "barulho-ao-virar-o-volante",
@@ -23,7 +36,18 @@
     "explicacao": "Ronco que aumenta ao virar costuma ser bomba trabalhando com nível baixo ou já gasta. Estalo seco ao esterçar aponta mais para pivô, bandeja ou coluna. O tipo de ruído muda o diagnóstico, então descrever o som ajuda muito no atendimento.",
     "urgencia": "Média. Ronco de bomba trabalhando seca destrói a bomba em pouco tempo.",
     "servicoRelacionado": "direcao-hidraulica",
-    "curto": "barulho ao virar o volante"
+    "curto": "barulho ao virar o volante",
+    "respostaDireta": "Barulho ao virar o volante tem duas assinaturas bem diferentes, e o tipo de som ajuda a apontar a causa. Um ronco ou zumbido que aumenta quando você vira o volante, principalmente no batente, costuma ser a bomba de direção hidráulica trabalhando com nível de fluido baixo ou já gasta. Já um estalo seco, que acontece ao esterçar em movimento, aponta mais pra pivô, bandeja ou coluna de direção com folga. Ronco de bomba trabalhando seca não é só desconfortável, ele destrói a bomba em pouco tempo se não for resolvido. Antes de levar pro conserto, vale prestar atenção no tipo exato de som, se é mais ronco ou mais estalo, e em que momento ele aparece, só no batente, o tempo todo ao virar, ou só em buraco. Descrever isso com detalhe ajuda muito no diagnóstico quando você chegar na oficina.",
+    "causasComuns": [
+      "Bomba de direção trabalhando com fluido baixo ou gasto",
+      "Correia da bomba desgastada",
+      "Pivô, bandeja ou coluna de direção com folga"
+    ],
+    "oQueFazerAgora": [
+      "Preste atenção se o som é mais ronco (bomba) ou mais estalo seco (suspensão)",
+      "Note em que momento o barulho aparece: no batente, o tempo todo, ou só em buraco",
+      "Confira o nível do fluido de direção, se estiver baixo, já é um sinal forte"
+    ]
   },
   {
     "slug": "carro-puxando-para-um-lado",
@@ -36,7 +60,19 @@
     "explicacao": "As quatro causas mais frequentes são alinhamento fora de especificação, pressão desigual entre os pneus, freio de um lado travando e desgaste em componente de suspensão. Alinhar sem verificar folga antes é dinheiro jogado fora, porque volta a desalinhar.",
     "urgencia": "Média. Come pneu e cansa o motorista. Se puxa forte na frenagem, é freio e sobe para urgente.",
     "servicoRelacionado": "alinhamento-e-balanceamento",
-    "curto": "carro puxando para um lado"
+    "curto": "carro puxando para um lado",
+    "respostaDireta": "Carro puxando pra um lado tem quatro causas mais frequentes: alinhamento fora de especificação, pressão desigual entre os pneus, freio de um lado travando parcialmente, ou desgaste em algum componente da suspensão. A primeira coisa fácil de checar é a calibragem dos pneus, porque pressão diferente entre os lados já é suficiente pra puxar o carro. Se a calibragem está igual e o problema continua, o próximo suspeito é o alinhamento, mas alinhar sem checar folga na direção ou na suspensão antes é dinheiro jogado fora, porque o carro volta a desalinhar rápido. Se o carro puxa forte justamente na hora de frear, é mais provável que seja freio travando de um lado, e isso muda a prioridade pra mais urgente. Puxar pro lado também acelera o desgaste do pneu e cansa mais o motorista em viagem longa, mesmo sem ser perigoso no dia a dia.",
+    "causasComuns": [
+      "Alinhamento fora de especificação",
+      "Pressão desigual entre os pneus",
+      "Freio de um lado travando parcialmente",
+      "Desgaste em componente de suspensão"
+    ],
+    "oQueFazerAgora": [
+      "Confira e equalize a calibragem dos pneus primeiro, é a causa mais simples",
+      "Note se o carro puxa mais forte ao frear, isso muda a prioridade",
+      "Observe se o desgaste do pneu está mais forte de um lado"
+    ]
   },
   {
     "slug": "volante-vibrando",
@@ -49,7 +85,19 @@
     "explicacao": "Vibração que aparece numa faixa de velocidade e some depois é a assinatura clássica de desbalanceamento. Também pode ser roda empenada, pneu deformado, disco de freio irregular quando a vibração aparece só ao frear, e folga em componente de direção.",
     "urgencia": "Baixa a média. Desconfortável, e acelera o desgaste de pneu e de rolamento.",
     "servicoRelacionado": "alinhamento-e-balanceamento",
-    "curto": "volante vibrando"
+    "curto": "volante vibrando",
+    "respostaDireta": "Vibração no volante que aparece numa faixa de velocidade específica e some depois, tipo entre 80 e 100 km/h, é a assinatura clássica de desbalanceamento de roda. Mas nem toda vibração é balanceamento: roda empenada, pneu deformado ou com bolha, e disco de freio irregular também causam vibração, principalmente quando ela aparece só na hora de frear. Folga em algum componente da direção é outra possibilidade, geralmente com uma vibração mais constante, não ligada a uma faixa de velocidade específica. Vale prestar atenção em quando a vibração aparece: só numa velocidade, só ao frear, ou o tempo todo. Isso ajuda a diferenciar entre balanceamento, uma roda com problema físico, ou o sistema de freio. Vibração não resolvida não é só desconforto, ela acelera o desgaste de pneu e de rolamento com o tempo.",
+    "causasComuns": [
+      "Desbalanceamento de roda",
+      "Roda empenada ou pneu deformado",
+      "Disco de freio irregular",
+      "Folga em componente de direção"
+    ],
+    "oQueFazerAgora": [
+      "Note em qual faixa de velocidade a vibração aparece e se ela some depois",
+      "Observe se a vibração é mais forte ao frear, isso aponta pro disco",
+      "Verifique visualmente se algum pneu tem bolha ou deformação"
+    ]
   },
   {
     "slug": "carro-pulando-nos-buracos",
@@ -62,7 +110,18 @@
     "explicacao": "Carro que continua balançando depois do buraco quase sempre tem amortecedor gasto. Amortecedor perdendo eficiência não é só conforto, ele aumenta a distância de frenagem e reduz a aderência em curva. Mola quebrada, coxim e bucha entram na mesma lista.",
     "urgencia": "Média a alta. Afeta frenagem e estabilidade.",
     "servicoRelacionado": "suspensao",
-    "curto": "carro pulando nos buracos"
+    "curto": "carro pulando nos buracos",
+    "respostaDireta": "Se o carro continua balançando depois de passar por um buraco, em vez de assentar rápido, o amortecedor quase sempre está gasto. Amortecedor perdendo eficiência não é só questão de conforto: ele aumenta a distância de frenagem e reduz a aderência do pneu no chão em curva, então é item de segurança, não só de rodagem macia. Outras causas possíveis são mola quebrada, coxim ou bucha desgastados, que também deixam a suspensão respondendo errado nos buracos. Um jeito simples de testar em casa é apoiar o peso do corpo na lateral do carro parado, empurrar pra baixo e soltar: se o carro balançar mais de uma vez antes de parar, é sinal de amortecedor gasto. Esse teste não substitui a inspeção na oficina, mas ajuda a perceber o problema antes de rodar assim por muito tempo.",
+    "causasComuns": [
+      "Amortecedor gasto ou vazando",
+      "Mola quebrada ou fadigada",
+      "Coxim ou bucha da suspensão desgastados"
+    ],
+    "oQueFazerAgora": [
+      "Teste empurrando a lateral do carro parado pra baixo, se balançar mais de uma vez, é sinal de amortecedor gasto",
+      "Observe se o desgaste do pneu está irregular, em manchas",
+      "Preste atenção se o carro perde estabilidade em curva, não só em buraco"
+    ]
   },
   {
     "slug": "vazamento-de-oleo-na-direcao",
@@ -75,7 +134,18 @@
     "explicacao": "Óleo avermelhado ou claro na região da roda dianteira normalmente é fluido de direção. Vem de mangueira, retentor da caixa ou vedação da bomba. Rodar com nível baixo é o caminho mais rápido para perder a bomba e a caixa juntas.",
     "urgencia": "Alta. Confira o nível antes de rodar.",
     "servicoRelacionado": "direcao-hidraulica",
-    "curto": "vazamento de óleo"
+    "curto": "vazamento de óleo",
+    "respostaDireta": "Óleo avermelhado ou claro embaixo do carro, na região da roda dianteira, normalmente é fluido do sistema de direção hidráulica, não óleo do motor. Costuma vir de três lugares: uma mangueira ressecada ou rachada, o retentor da caixa de direção, ou a vedação da bomba. O detalhe importante aqui é que rodar com o nível de fluido baixo é o caminho mais rápido pra perder a bomba e a caixa de direção juntas, porque o sistema passa a trabalhar sem lubrificação suficiente. Antes de rodar, vale conferir o nível do reservatório: se estiver visivelmente baixo, o ideal é não insistir e levar o carro pra inspeção o quanto antes. Um pano ou papelão embaixo do carro de um dia pro outro ajuda a confirmar se o vazamento é real e onde ele está pingando, o que já adianta parte do diagnóstico.",
+    "causasComuns": [
+      "Mangueira do sistema hidráulico ressecada ou rachada",
+      "Retentor da caixa de direção desgastado",
+      "Vedação da bomba comprometida"
+    ],
+    "oQueFazerAgora": [
+      "Confira o nível do reservatório de fluido antes de rodar",
+      "Coloque um papelão embaixo do carro parado, de um dia pro outro, pra confirmar o vazamento e onde ele pinga",
+      "Evite rodar muito tempo com o nível baixo, isso danifica bomba e caixa juntas"
+    ]
   },
   {
     "slug": "pneu-gastando-torto",
@@ -88,7 +158,18 @@
     "explicacao": "O desenho do desgaste diz a causa. Gasto na borda interna ou externa aponta para cambagem ou convergência fora de especificação. Gasto no centro é excesso de pressão, gasto nas duas bordas é pressão baixa. Desgaste irregular em manchas aponta para amortecedor.",
     "urgencia": "Média. É prejuízo silencioso, pneu novo dura metade.",
     "servicoRelacionado": "alinhamento-e-balanceamento",
-    "curto": "pneu gastando torto"
+    "curto": "pneu gastando torto",
+    "respostaDireta": "O desenho do desgaste do pneu conta a causa do problema. Gasto concentrado na borda interna ou externa do pneu aponta pra cambagem ou convergência fora de especificação, ou seja, alinhamento. Gasto no centro da banda de rodagem é sinal de excesso de pressão, enquanto gasto nas duas bordas ao mesmo tempo indica pressão baixa. Já desgaste irregular, em manchas espalhadas pelo pneu, costuma apontar pra amortecedor gasto, não pra alinhamento. É um prejuízo silencioso: pneu gastando torto dura bem menos que o esperado, e o motorista só percebe quando já perdeu metade da vida útil do pneu. Antes de trocar o pneu ou de levar pra alinhar, vale olhar com atenção onde exatamente está o desgaste, porque isso já indica se o problema é calibragem, alinhamento ou suspensão, e evita repetir o mesmo erro no pneu novo.",
+    "causasComuns": [
+      "Cambagem ou convergência fora de especificação",
+      "Pressão de pneu incorreta, alta ou baixa",
+      "Amortecedor gasto, causando desgaste irregular em manchas"
+    ],
+    "oQueFazerAgora": [
+      "Olhe onde exatamente está o desgaste: borda, centro, ou manchas irregulares",
+      "Confira e corrija a calibragem dos quatro pneus",
+      "Não troque o pneu sem resolver a causa, ou o novo gasta do mesmo jeito"
+    ]
   },
   {
     "slug": "freio-rangendo",
@@ -101,7 +182,19 @@
     "explicacao": "Rangido metálico normalmente é pastilha no fim ou disco marcado. Pedal que desce mais que o normal, ou que vai ao fundo, indica ar no sistema, vazamento ou cilindro comprometido. Freio que faz barulho é aviso, freio silencioso e sem eficiência é pior.",
     "urgencia": "Alta. Freio não espera a próxima semana.",
     "servicoRelacionado": "freios",
-    "curto": "freio rangendo"
+    "curto": "freio rangendo",
+    "respostaDireta": "Rangido metálico ao frear normalmente é pastilha de freio no fim da vida útil ou disco marcado, e costuma ser o primeiro aviso antes de o freio perder eficiência de verdade. Já pedal que desce mais que o normal, ou que vai até o fundo, indica ar no sistema hidráulico, vazamento de fluido ou cilindro comprometido, e esse sinal é mais sério que o rangido sozinho. A regra prática é: freio que faz barulho está avisando, freio silencioso mas sem eficiência é o cenário pior, porque não dá aviso antes de falhar. Freio é item de segurança que não espera a próxima semana, principalmente se o pedal está baixo ou se o carro demora visivelmente mais pra parar do que costumava. Vale prestar atenção em qual das duas coisas está acontecendo, o rangido ou o pedal baixo, porque isso muda a urgência e o que precisa ser verificado primeiro.",
+    "causasComuns": [
+      "Pastilha de freio no fim da vida útil",
+      "Disco de freio marcado ou desgastado",
+      "Ar no sistema hidráulico ou vazamento de fluido",
+      "Cilindro de freio comprometido"
+    ],
+    "oQueFazerAgora": [
+      "Preste atenção se é só rangido, ou se o pedal também está mais baixo que o normal",
+      "Note se o carro está demorando visivelmente mais pra parar",
+      "Não adie: freio é item de segurança, não espera a próxima semana"
+    ]
   },
   {
     "slug": "folga-no-volante",
@@ -114,7 +207,19 @@
     "explicacao": "Folga é o giro morto antes da roda responder. Vem de caixa de direção desgastada, terminal, barra axial ou pivô. Reduz a precisão da direção justamente na situação em que ela mais importa, que é a manobra de emergência.",
     "urgencia": "Alta se a folga for grande. Item de reprovação em inspeção.",
     "servicoRelacionado": "direcao-mecanica",
-    "curto": "folga no volante"
+    "curto": "folga no volante",
+    "respostaDireta": "Folga no volante é o giro morto que você sente antes da roda realmente começar a responder ao movimento do volante. Ela vem de desgaste na caixa de direção mecânica, no terminal, na barra axial ou no pivô, e o efeito prático é que a direção perde precisão justamente na situação em que ela mais importa: uma manobra de emergência, um desvio rápido pra evitar um buraco ou outro carro. É um item que costuma ser reprovado em inspeção veicular quando a folga é grande, porque representa risco real de segurança, não é só desconforto ao dirigir. Vale prestar atenção em quanto o volante gira antes do carro começar a responder: um giro pequeno e rápido é normal, mas se você sente que precisa girar bastante antes de sentir a roda reagir, isso já é sinal de folga excessiva. Quanto maior a folga, mais urgente é levar pra inspeção.",
+    "causasComuns": [
+      "Caixa de direção mecânica desgastada",
+      "Terminal de direção com folga",
+      "Barra axial desgastada",
+      "Pivô da suspensão com folga"
+    ],
+    "oQueFazerAgora": [
+      "Com o carro parado, gire o volante devagar e sinta quanto ele gira antes da roda começar a responder",
+      "Preste atenção se a folga aumentou nos últimos tempos",
+      "Se a folga for perceptível e grande, não adie a inspeção"
+    ]
   },
   {
     "slug": "barulho-em-buraco",
@@ -127,6 +232,17 @@
     "explicacao": "Batida seca ao passar em irregularidade costuma ser bucha, coxim, batente ou bieleta. Estalo repetido aponta para pivô ou terminal. É o tipo de ruído que piora devagar até o motorista se acostumar, e é justamente por isso que gera dano maior.",
     "urgencia": "Média.",
     "servicoRelacionado": "suspensao",
-    "curto": "barulho em buraco"
+    "curto": "barulho em buraco",
+    "respostaDireta": "Barulho ao passar em buraco ou irregularidade da pista tem características diferentes dependendo da peça envolvida. Uma batida seca, tipo um toc na hora do impacto, costuma vir de bucha, coxim, batente de suspensão ou bieleta desgastados. Já um estalo que se repete, principalmente em curva ou em manobra, aponta mais pra pivô ou terminal de direção com folga. Esse é um dos sintomas que mais engana, porque piora bem devagar: o motorista vai se acostumando com o barulho até ele virar normal no dia a dia, e é justamente por isso que o desgaste avança e o dano fica maior quando finalmente é levado pra oficina. Vale prestar atenção em quando exatamente o barulho aparece, se é só no impacto do buraco ou também em curva, e se ele foi ficando mais forte com o tempo, porque isso ajuda a diferenciar entre suspensão e direção antes mesmo da inspeção.",
+    "causasComuns": [
+      "Bucha, coxim ou batente de suspensão desgastados",
+      "Bieleta da suspensão comprometida",
+      "Pivô ou terminal de direção com folga"
+    ],
+    "oQueFazerAgora": [
+      "Note se o barulho é uma batida seca no impacto, ou um estalo que se repete em curva",
+      "Preste atenção se o som foi ficando mais forte com o tempo",
+      "Não deixe se acostumar com o barulho, ele tende a piorar devagar"
+    ]
   }
 ]
