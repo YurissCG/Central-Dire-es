@@ -100,12 +100,12 @@ O elemento assinatura. Faça com calma, é o que vende o site.
 
 ### Tarefa 8. Serviços
 
-- [ ] `/servicos` como índice, com resumo e link para as seis filhas
-- [ ] `/servicos/[slug]` com `generateStaticParams` e `generateMetadata`
-- [ ] Estrutura de sete blocos do doc 04 seção 4.5, com o bloco de resposta de 130 a 170 palavras
-- [ ] `Service` e `BreadcrumbList` em JSON-LD por página
-- [ ] CTA no fim com a origem correta na mensagem
-- [ ] Commit: `adiciona paginas de servico`
+- [x] `/servicos` como índice, com resumo e link para as filhas — **nota:** `dados/servicos.json` tem 7 serviços (inclui `revisao-preventiva`), não 6 como diz este texto e o doc 03 seção 3.3. Segui os 7, já que `revisao-preventiva` tem dado completo e keyword mapeada em `palavras-chave.md`. Total de páginas do site passa de 20 para 21
+- [x] `/servicos/[slug]` com `generateStaticParams` e `generateMetadata`
+- [x] Estrutura de sete blocos do doc 04 seção 4.5, com o bloco de resposta de 130 a 170 palavras (todas conferidas, 135-147 palavras)
+- [x] `Service` e `BreadcrumbList` em JSON-LD por página
+- [x] CTA no fim com a origem correta na mensagem
+- [x] Commit: `adiciona paginas de servico`
 
 ### Tarefa 9. Sintomas
 

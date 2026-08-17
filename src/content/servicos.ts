@@ -4,14 +4,10 @@ export const SERVICOS = [
     nome: "Direção hidráulica",
     titulo: "Conserto de direção hidráulica em Santa Luzia",
     keywordPrincipal: "conserto de direção hidráulica Santa Luzia",
-    keywordsSecundarias: [
-      "reparo direção hidráulica BH",
-      "bomba de direção hidráulica",
-      "vazamento de direção hidráulica",
-      "direção pesada conserto",
-    ],
-    resumo:
-      "Volante pesado, barulho ao virar, vazamento de óleo. Testamos bomba, caixa e mangueira antes de trocar qualquer coisa.",
+    keywordsSecundarias: ["reparo direção hidráulica BH", "bomba de direção hidráulica", "vazamento de direção hidráulica", "direção pesada conserto"],
+    resumo: "Volante pesado, barulho ao virar, vazamento de óleo. Testamos bomba, caixa e mangueira antes de trocar qualquer coisa.",
+    respostaDireta:
+      "Direção pesada, barulho ao virar o volante ou vazamento de óleo embaixo do carro costumam apontar para a bomba, a caixa de direção, uma mangueira ou o reservatório do sistema hidráulico. Antes de fechar qualquer orçamento, a Central Direções testa a pressão do sistema, verifica o nível e o estado do fluido e a correia da bomba, para achar exatamente qual componente está causando o problema. Sempre que dá, o reparo usa peça remanufaturada no lugar da peça nova, feita no setor próprio de remanufatura da oficina, o que deixa o custo final mais baixo sem abrir mão da qualidade. Depois do reparo, o sistema passa por sangria e teste em movimento, para confirmar que a direção voltou a responder do jeito certo. A oficina fica em São Benedito, Santa Luzia, e atende toda a região norte de Belo Horizonte.",
     sintomasRelacionados: ["volante-pesado", "barulho-ao-virar-o-volante", "vazamento-de-oleo-na-direcao"],
     prioridade: 1,
     processo: [
@@ -23,25 +19,33 @@ export const SERVICOS = [
       "Sangria do sistema e teste em movimento",
     ],
     perguntas: [
-      "Quanto custa consertar a direção hidráulica?",
-      "Dá para rodar com a direção hidráulica com problema?",
-      "Quanto tempo leva o reparo?",
-      "Compensa reparar ou trocar a caixa de direção?",
+      {
+        pergunta: "Quanto custa consertar a direção hidráulica?",
+        resposta: "Depende do componente com problema, bomba, caixa, mangueira ou reservatório, e do modelo do carro. A gente testa o sistema antes de falar em valor e manda o orçamento pelo WhatsApp.",
+      },
+      {
+        pergunta: "Dá para rodar com a direção hidráulica com problema?",
+        resposta: "Dá, mas não por muito tempo. Se tem vazamento, o nível baixo pode destruir a bomba e a caixa juntas. Se está só pesada, o esforço extra cansa mais rápido em manobra, mas não é uma emergência na hora.",
+      },
+      {
+        pergunta: "Quanto tempo leva o reparo?",
+        resposta: "Varia com o que for encontrado. Um ajuste ou troca de mangueira é mais rápido que uma remanufatura completa de caixa. A gente informa o prazo depois do diagnóstico, antes de começar o serviço.",
+      },
+      {
+        pergunta: "Compensa reparar ou trocar a caixa de direção?",
+        resposta: "Quando dá pra recuperar, reparar com peça remanufaturada sai mais barato que uma caixa nova e resolve o mesmo problema. Quando o desgaste é grande demais, a gente explica antes de mexer.",
+      },
     ],
   },
   {
     slug: "caixa-de-direcao-remanufaturada",
     nome: "Caixa de direção remanufaturada",
-    titulo: "Caixa de direção remanufaturada em Santa Luzia e BH",
+    titulo: "Caixa de direção remanufaturada em Santa Luzia",
     keywordPrincipal: "caixa de direção remanufaturada BH",
-    keywordsSecundarias: [
-      "caixa de direção hidráulica recuperada",
-      "peça remanufaturada automotiva",
-      "reparo caixa de direção",
-      "setor de direção hidráulica",
-    ],
-    resumo:
-      "A oficina tem setor próprio de remanufatura. A caixa é desmontada, recuperada e testada aqui dentro, e custa menos que uma nova.",
+    keywordsSecundarias: ["caixa de direção hidráulica recuperada", "peça remanufaturada automotiva", "reparo caixa de direção", "setor de direção hidráulica"],
+    resumo: "A oficina tem setor próprio de remanufatura. A caixa é desmontada, recuperada e testada aqui dentro, e custa menos que uma nova.",
+    respostaDireta:
+      "Caixa de direção remanufaturada é a caixa original do seu carro, desmontada, recuperada e testada, em vez de trocada por uma peça nova. A Central Direções tem um setor próprio pra isso: a caixa é removida e desmontada por completo, o eixo, a rosca, o retentor e a carcaça são inspecionados, e cada componente desgastado é substituído. Depois da montagem, a caixa passa por teste de pressão em bancada antes de voltar pro carro, e só depois disso vai pra instalação, alinhamento e teste em rua. O resultado é uma peça que funciona como nova, mas custa menos, porque reaproveita a carcaça original em vez de fabricar tudo de novo. É o principal diferencial da oficina: a maioria não tem esse setor de remanufatura dentro de casa, só revende peça pronta. Fica em São Benedito, Santa Luzia, e atende Santa Luzia e a região de Belo Horizonte.",
     sintomasRelacionados: ["volante-pesado", "vazamento-de-oleo-na-direcao", "folga-no-volante"],
     prioridade: 1,
     processo: [
@@ -52,10 +56,22 @@ export const SERVICOS = [
       "Instalação, alinhamento e teste em rua",
     ],
     perguntas: [
-      "O que é uma caixa de direção remanufaturada?",
-      "Peça remanufaturada é confiável?",
-      "Quanto mais barato sai em relação à peça nova?",
-      "Vocês vendem peça remanufaturada para outras oficinas?",
+      {
+        pergunta: "O que é uma caixa de direção remanufaturada?",
+        resposta: "É a caixa original desmontada, com os componentes desgastados trocados, retentor e vedação novos, e testada em bancada antes de voltar pro carro. Não é peça usada revendida sem reparo.",
+      },
+      {
+        pergunta: "Peça remanufaturada é confiável?",
+        resposta: "Sim, desde que a remanufatura seja feita com inspeção completa e teste de pressão, como é feito aqui. O processo recupera a peça pro mesmo padrão de funcionamento, não é um reparo superficial.",
+      },
+      {
+        pergunta: "Quanto mais barato sai em relação à peça nova?",
+        resposta: "A diferença varia com o modelo do carro, mas a remanufatura costuma sair bem abaixo do preço de uma caixa nova, porque reaproveita a carcaça original.",
+      },
+      {
+        pergunta: "Vocês vendem peça remanufaturada para outras oficinas?",
+        resposta: "Essa informação ainda está em confirmação com a oficina. Chama no WhatsApp que a gente confirma certinho.",
+      },
     ],
   },
   {
@@ -64,8 +80,9 @@ export const SERVICOS = [
     titulo: "Reparo de direção mecânica em Santa Luzia",
     keywordPrincipal: "reparo de direção mecânica Santa Luzia",
     keywordsSecundarias: ["folga no volante", "terminal de direção", "caixa de direção mecânica"],
-    resumo:
-      "Folga no volante, ruído em terreno irregular, direção imprecisa. Ajuste, reparo ou substituição de caixa, terminal e barra.",
+    resumo: "Folga no volante, ruído em terreno irregular, direção imprecisa. Ajuste, reparo ou substituição de caixa, terminal e barra.",
+    respostaDireta:
+      "Folga no volante, ruído em terreno irregular ou direção imprecisa costumam vir da caixa de direção mecânica, do terminal, da barra axial ou do pivô desgastados. A Central Direções inspeciona a folga em cada um desses pontos e testa a direção em movimento antes de fechar o orçamento, porque nem toda folga vem do mesmo lugar. O reparo pode ser um ajuste, a troca de um componente específico ou a substituição da caixa mecânica inteira, dependendo do que a inspeção encontrar. Depois de qualquer serviço na direção mecânica, o alinhamento é obrigatório, porque mexer nesses componentes muda a geometria da direção. É um sistema mais simples que a direção hidráulica, sem bomba nem fluido, mas que também perde precisão com o tempo e o uso. A oficina atende Santa Luzia, São Benedito e a região norte de BH.",
     sintomasRelacionados: ["folga-no-volante", "carro-puxando-para-um-lado"],
     prioridade: 2,
     processo: [
@@ -76,9 +93,18 @@ export const SERVICOS = [
       "Alinhamento obrigatório depois do serviço",
     ],
     perguntas: [
-      "Qual a diferença entre direção mecânica e hidráulica?",
-      "Folga no volante é perigoso?",
-      "Precisa alinhar depois de mexer na direção?",
+      {
+        pergunta: "Qual a diferença entre direção mecânica e hidráulica?",
+        resposta: "A mecânica não tem bomba nem fluido, o esforço vem só da relação de engrenagens da caixa. A hidráulica usa um sistema de fluido pressurizado pra reduzir o esforço no volante. São sistemas diferentes, com desgastes diferentes.",
+      },
+      {
+        pergunta: "Folga no volante é perigoso?",
+        resposta: "Se a folga for grande, sim. Ela reduz a precisão da direção justamente na hora que mais importa, que é a manobra de emergência. Vale checar assim que perceber.",
+      },
+      {
+        pergunta: "Precisa alinhar depois de mexer na direção?",
+        resposta: "Sim, sempre. Qualquer reparo em caixa, terminal, barra ou pivô muda a geometria da direção, então o alinhamento entra depois do serviço, não é opcional.",
+      },
     ],
   },
   {
@@ -87,8 +113,9 @@ export const SERVICOS = [
     titulo: "Conserto de suspensão em Santa Luzia",
     keywordPrincipal: "conserto de suspensão Santa Luzia",
     keywordsSecundarias: ["amortecedor", "carro pulando", "batida na suspensão", "bandeja e pivô"],
-    resumo:
-      "Carro pulando em buraco, batida seca, instabilidade em curva. Amortecedor, mola, bandeja, pivô, bucha e coxim.",
+    resumo: "Carro pulando em buraco, batida seca, instabilidade em curva. Amortecedor, mola, bandeja, pivô, bucha e coxim.",
+    respostaDireta:
+      "Carro pulando muito em buraco, batida seca ou instabilidade em curva geralmente apontam para amortecedor gasto, mola quebrada, ou desgaste em bandeja, pivô, bucha ou coxim. A Central Direções faz a inspeção com o carro suspenso, testa o amortecedor e verifica vazamento, e confere cada um desses pontos antes de fechar o orçamento. Amortecedor gasto não é só questão de conforto: ele aumenta a distância de frenagem e reduz a aderência em curva, então é item de segurança, não só de rodagem macia. O orçamento sai por item, com o que é prioridade de segurança separado do que pode esperar mais um pouco, pra você decidir com clareza. Depois da troca, o alinhamento entra junto, porque suspensão e geometria de direção andam juntas. A oficina fica em São Benedito, Santa Luzia, e atende toda a região norte de Belo Horizonte.",
     sintomasRelacionados: ["carro-pulando-nos-buracos", "barulho-em-buraco", "pneu-gastando-torto"],
     prioridade: 2,
     processo: [
@@ -98,7 +125,20 @@ export const SERVICOS = [
       "Orçamento por item, com prioridade de segurança separada do que pode esperar",
       "Substituição e alinhamento",
     ],
-    perguntas: ["Quando trocar o amortecedor?", "Dá para trocar só um lado?", "Suspensão gasta pneu?"],
+    perguntas: [
+      {
+        pergunta: "Quando trocar o amortecedor?",
+        resposta: "Quando o carro continua balançando depois de passar por um buraco, quando faz barulho seco na suspensão, ou quando o pneu está com desgaste irregular em manchas.",
+      },
+      {
+        pergunta: "Dá para trocar só um lado?",
+        resposta: "Tecnicamente dá, mas não é recomendado. Amortecedor se desgasta em par, e trocar só um lado deixa o carro com comportamento desigual entre os dois lados.",
+      },
+      {
+        pergunta: "Suspensão gasta pneu?",
+        resposta: "Sim. Amortecedor, bucha ou bandeja desgastados mudam o contato do pneu com o chão e aceleram o desgaste, geralmente em manchas irregulares.",
+      },
+    ],
   },
   {
     slug: "alinhamento-e-balanceamento",
@@ -106,8 +146,9 @@ export const SERVICOS = [
     titulo: "Alinhamento e balanceamento em Santa Luzia",
     keywordPrincipal: "alinhamento e balanceamento Santa Luzia",
     keywordsSecundarias: ["geometria de direção", "carro puxando para o lado", "volante vibrando", "cambagem"],
-    resumo:
-      "Carro puxando para um lado, volante vibrando, pneu gastando de um lado só. Serviço rápido, e o que evita gasto grande depois.",
+    resumo: "Carro puxando para um lado, volante vibrando, pneu gastando de um lado só. Serviço rápido, e o que evita gasto grande depois.",
+    respostaDireta:
+      "Carro puxando pra um lado, volante vibrando em velocidade ou pneu gastando torto de um lado só são os sinais mais comuns de que o carro precisa de alinhamento e balanceamento. São serviços diferentes: alinhamento ajusta o ângulo das rodas, cambagem, cáster e convergência, enquanto balanceamento corrige o peso da roda com o pneu montado, pra não vibrar. A Central Direções confere a calibragem e o estado do pneu primeiro, e inspeciona folga antes de alinhar, porque alinhar um carro com folga na direção ou na suspensão não resolve e volta a desalinhar rápido. É o serviço de entrada mais comum da oficina, rápido de fazer e que evita gasto grande depois, porque pneu gastando torto e suspensão trabalhando errado saem caro se ficar rodando assim por muito tempo. Atende Santa Luzia, São Benedito, Vilarinho e região.",
     sintomasRelacionados: ["carro-puxando-para-um-lado", "volante-vibrando", "pneu-gastando-torto"],
     prioridade: 1,
     processo: [
@@ -118,9 +159,18 @@ export const SERVICOS = [
       "Teste em rua",
     ],
     perguntas: [
-      "De quanto em quanto tempo alinhar?",
-      "Qual a diferença entre alinhamento e balanceamento?",
-      "Alinhamento resolve carro puxando para o lado?",
+      {
+        pergunta: "De quanto em quanto tempo alinhar?",
+        resposta: "Como referência geral, vale revisar a cada troca de pneu ou depois de bater em buraco forte, subir em guia ou trocar peça de suspensão.",
+      },
+      {
+        pergunta: "Qual a diferença entre alinhamento e balanceamento?",
+        resposta: "Alinhamento ajusta o ângulo das rodas. Balanceamento corrige o peso da roda com o pneu montado, pra não vibrar em velocidade. São coisas diferentes, e às vezes o carro precisa dos dois.",
+      },
+      {
+        pergunta: "Alinhamento resolve carro puxando para o lado?",
+        resposta: "Na maioria das vezes sim, mas antes a gente confere se não é freio travando de um lado ou peça de suspensão gasta, porque alinhar sem resolver a causa não segura o resultado.",
+      },
     ],
   },
   {
@@ -129,7 +179,9 @@ export const SERVICOS = [
     titulo: "Serviço de freio em Santa Luzia",
     keywordPrincipal: "conserto de freio Santa Luzia",
     keywordsSecundarias: ["pastilha de freio", "disco de freio", "freio rangendo", "pedal de freio baixo"],
-    resumo: "Rangido, pedal baixo, carro demorando para parar. Pastilha, disco, fluido, cilindro e mangueira.",
+    resumo: "Rangido ao frear, pedal baixo, carro demorando para parar. Pastilha, disco, fluido, cilindro e mangueira, tudo revisado e testado.",
+    respostaDireta:
+      "Rangido ao frear, pedal baixo ou o carro demorando mais que o normal pra parar são sinais de que o sistema de freio precisa de atenção, geralmente pastilha, disco, fluido ou cilindro. A Central Direções mede o desgaste da pastilha e do disco, verifica o fluido e testa a eficiência da frenagem antes de fechar o orçamento, porque rangido nem sempre é só pastilha, e pedal baixo pode ser ar no sistema ou vazamento. Freio é item de segurança que não espera: o carro sai da oficina com o sistema testado em rua, não só montado. A troca de disco junto com a pastilha depende do desgaste medido, não é automática, e a oficina explica o motivo antes de incluir no orçamento. Fica em São Benedito, Santa Luzia, atendendo a região norte de Belo Horizonte.",
     sintomasRelacionados: ["freio-rangendo", "carro-demora-para-parar"],
     prioridade: 3,
     processo: [
@@ -140,18 +192,29 @@ export const SERVICOS = [
       "Substituição e teste em rua",
     ],
     perguntas: [
-      "Freio rangendo é sempre pastilha?",
-      "Quando trocar o disco junto com a pastilha?",
-      "De quanto em quanto tempo trocar o fluido de freio?",
+      {
+        pergunta: "Freio rangendo é sempre pastilha?",
+        resposta: "Na maioria das vezes sim, mas nem sempre. Também pode ser disco marcado ou sujeira acumulada. A gente mede antes de indicar a troca.",
+      },
+      {
+        pergunta: "Quando trocar o disco junto com a pastilha?",
+        resposta: "Quando a medição mostra o disco fora da espessura mínima ou irregular. Não é um pacote automático, depende do desgaste de cada peça.",
+      },
+      {
+        pergunta: "De quanto em quanto tempo trocar o fluido de freio?",
+        resposta: "O fluido de freio absorve umidade com o tempo e perde eficiência mesmo sem uso. Vale conferir na revisão preventiva.",
+      },
     ],
   },
   {
     slug: "revisao-preventiva",
     nome: "Revisão preventiva",
-    titulo: "Revisão preventiva antes de viagem em Santa Luzia",
+    titulo: "Revisão preventiva em Santa Luzia",
     keywordPrincipal: "revisão preventiva Santa Luzia",
     keywordsSecundarias: ["revisão antes de viagem", "checklist de segurança do carro"],
-    resumo: "Checagem de direção, suspensão, freio, pneu e fluido antes de pegar estrada.",
+    resumo: "Checagem completa de direção, suspensão, freio, pneu e fluido antes de pegar estrada, com relatório do que precisa de atenção.",
+    respostaDireta:
+      "Antes de pegar estrada, vale conferir direção, suspensão, freio, pneu e nível de fluido, porque um problema pequeno em casa vira imprevisto caro longe de casa. A Central Direções faz esse checklist completo: direção e suspensão, calibragem e estado do pneu e do estepe, nível de fluido, e entrega um retorno claro do que está bom, do que precisa de atenção em breve e do que é urgente antes de viajar. É um serviço pensado pra quem vai rodar mais que o normal, seja viagem de família ou trabalho, e prefere descobrir o problema no elevador da oficina do que no acostamento da estrada. O relatório separa o que é seguro esperar do que não é, sem trocar nada sem avisar antes. A oficina fica em São Benedito, Santa Luzia, região norte de Belo Horizonte.",
     sintomasRelacionados: [],
     prioridade: 3,
     processo: [
@@ -160,7 +223,20 @@ export const SERVICOS = [
       "Verificação de nível de fluido",
       "Relatório do que está bom, do que precisa de atenção e do que é urgente",
     ],
-    perguntas: ["O que a revisão inclui?", "Quanto tempo leva?", "Precisa agendar?"],
+    perguntas: [
+      {
+        pergunta: "O que a revisão inclui?",
+        resposta: "Checklist de direção, suspensão e freio, conferência de calibragem, estado do pneu e do estepe, e verificação de nível de fluido, com um relatório do que está bom e do que precisa de atenção.",
+      },
+      {
+        pergunta: "Quanto tempo leva?",
+        resposta: "Varia com o estado do carro, mas é um serviço rápido comparado a um reparo. A gente informa o tempo estimado na chegada.",
+      },
+      {
+        pergunta: "Precisa agendar?",
+        resposta: "Recomendado, principalmente perto de período de viagem, pra garantir horário. Mas também atende quem chega direto, dentro do horário de funcionamento.",
+      },
+    ],
   },
 ] as const;
 

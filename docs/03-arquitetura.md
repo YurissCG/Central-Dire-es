@@ -77,6 +77,7 @@ Rota em português, sem acento, em kebab-case. URL é parte do SEO e nunca muda 
 | `/servicos/suspensao` | comercial | conserto de suspensão santa luzia |
 | `/servicos/alinhamento-e-balanceamento` | serviço de entrada, ticket baixo e volume alto | alinhamento e balanceamento santa luzia |
 | `/servicos/freios` | comercial | freio santa luzia |
+| `/servicos/revisao-preventiva` | serviço de entrada, ticket baixo | revisão preventiva santa luzia |
 | `/sintomas` | índice do diagnóstico | problemas na direção do carro |
 | `/sintomas/[slug]` | 8 páginas de cauda longa, uma por sintoma | ver `dados/palavras-chave.md` |
 | `/sobre` | prova de que existe gente de verdade atrás disso, base de E-E-A-T | quem somos |
@@ -84,7 +85,7 @@ Rota em português, sem acento, em kebab-case. URL é parte do SEO e nunca muda 
 | `/contato` | endereço, mapa, horário, telefones | oficina de direção são benedito |
 | `/orcamento` | formulário que monta a mensagem de WhatsApp | orçamento direção hidráulica |
 
-Total de 20 páginas estáticas. Nunca gere página programática além disso, por causa da política de doorway page do Google.
+Total de 21 páginas estáticas (`dados/servicos.json` tem 7 serviços, incluindo `revisao-preventiva`, que não estava nesta tabela na versão original do documento). Nunca gere página programática além dessa lista, por causa da política de doorway page do Google.
 
 ## 3.4 Convenções de código
 
