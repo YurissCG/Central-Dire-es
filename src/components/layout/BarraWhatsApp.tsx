@@ -13,7 +13,7 @@ export function BarraWhatsApp() {
     if (!painel) return;
 
     const observer = new IntersectionObserver(([entrada]) => setEscondida(entrada.isIntersecting), {
-      threshold: 0.3,
+      threshold: 0,
     });
     observer.observe(painel);
     return () => observer.disconnect();

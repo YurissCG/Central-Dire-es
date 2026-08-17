@@ -75,13 +75,13 @@ Marque os checkboxes conforme avança. Não pule fase: a fase 2 depende de token
 
 O elemento assinatura. Faça com calma, é o que vende o site.
 
-- [ ] `ItemSintoma`: `<button>` com `aria-pressed`, ícone, rótulo, estados de foco e marcado
-- [ ] `PainelDiagnostico`: grade de 8 sintomas, 2 colunas em mobile e 4 em desktop, com `useState`
-- [ ] `ResultadoDiagnostico`: setor provável, explicação vinda de `sintomas.ts`, aviso amarelo de honestidade, CTA com mensagem montada com os sintomas marcados
-- [ ] Estado vazio: se nada foi marcado, o botão fica desabilitado com texto explicando o que fazer
-- [ ] Cada resultado leva à página `/sintomas/[slug]` correspondente
-- [ ] Operável só por teclado, testado
-- [ ] Commit: `adiciona painel de diagnostico por sintoma`
+- [x] `ItemSintoma`: `<button>` com `aria-pressed`, ícone, rótulo, estados de foco e marcado
+- [x] `PainelDiagnostico`: grade de 8 sintomas, 2 colunas em mobile e 4 em desktop, com `useState`
+- [x] `ResultadoDiagnostico`: setor provável, explicação vinda de `sintomas.ts`, aviso amarelo de honestidade, CTA com mensagem montada com os sintomas marcados (campo `curto` adicionado a `sintomas.ts`/`dados/sintomas.json` para montar a mensagem no padrão do doc 02.5)
+- [x] Estado vazio: se nada foi marcado, o botão fica desabilitado com texto explicando o que fazer
+- [x] Cada resultado leva à página `/sintomas/[slug]` correspondente
+- [x] Operável só por teclado, testado com Playwright (Tab até o item, Enter marca, aria-pressed correto)
+- [x] Commit: `adiciona painel de diagnostico por sintoma`
 
 ### Tarefa 7. Restante da home
 

@@ -2,6 +2,7 @@ export const SINTOMAS = [
   {
     slug: "volante-pesado",
     rotulo: "O volante está pesado",
+    curto: "volante pesado",
     icone: "Gauge",
     pergunta: "Direção pesada: o que pode ser?",
     keywordPrincipal: "direção pesada o que pode ser",
@@ -16,6 +17,7 @@ export const SINTOMAS = [
   {
     slug: "barulho-ao-virar-o-volante",
     rotulo: "Tem barulho ao virar o volante",
+    curto: "barulho ao virar o volante",
     icone: "Volume2",
     pergunta: "Barulho ao virar o volante: o que é?",
     keywordPrincipal: "barulho ao virar o volante",
@@ -29,6 +31,7 @@ export const SINTOMAS = [
   {
     slug: "carro-puxando-para-um-lado",
     rotulo: "O carro puxa para um lado",
+    curto: "carro puxando para um lado",
     icone: "MoveRight",
     pergunta: "Por que o carro puxa para um lado?",
     keywordPrincipal: "carro puxando para um lado",
@@ -42,6 +45,7 @@ export const SINTOMAS = [
   {
     slug: "volante-vibrando",
     rotulo: "O volante vibra em velocidade",
+    curto: "volante vibrando",
     icone: "Waves",
     pergunta: "Volante vibrando: o que causa?",
     keywordPrincipal: "volante vibrando em velocidade",
@@ -55,6 +59,7 @@ export const SINTOMAS = [
   {
     slug: "carro-pulando-nos-buracos",
     rotulo: "O carro pula muito nos buracos",
+    curto: "carro pulando nos buracos",
     icone: "Activity",
     pergunta: "Carro pulando muito: é a suspensão?",
     keywordPrincipal: "carro pulando muito suspensão",
@@ -68,6 +73,7 @@ export const SINTOMAS = [
   {
     slug: "vazamento-de-oleo-na-direcao",
     rotulo: "Tem vazamento de óleo embaixo do carro",
+    curto: "vazamento de óleo",
     icone: "Droplet",
     pergunta: "Vazamento de óleo da direção hidráulica",
     keywordPrincipal: "vazamento de óleo direção hidráulica",
@@ -81,6 +87,7 @@ export const SINTOMAS = [
   {
     slug: "pneu-gastando-torto",
     rotulo: "O pneu está gastando torto",
+    curto: "pneu gastando torto",
     icone: "CircleDot",
     pergunta: "Pneu gastando de um lado só: por quê?",
     keywordPrincipal: "pneu gastando de um lado só",
@@ -94,6 +101,7 @@ export const SINTOMAS = [
   {
     slug: "freio-rangendo",
     rotulo: "O freio range ou demora para parar",
+    curto: "freio rangendo",
     icone: "Disc3",
     pergunta: "Freio rangendo ou pedal baixo: o que fazer?",
     keywordPrincipal: "freio rangendo o que pode ser",
@@ -107,6 +115,7 @@ export const SINTOMAS = [
   {
     slug: "folga-no-volante",
     rotulo: "O volante tem folga",
+    curto: "folga no volante",
     icone: "RotateCcw",
     pergunta: "Folga no volante é perigoso?",
     keywordPrincipal: "folga no volante",
@@ -120,6 +129,7 @@ export const SINTOMAS = [
   {
     slug: "barulho-em-buraco",
     rotulo: "Faz barulho ao passar em buraco",
+    curto: "barulho em buraco",
     icone: "AlertTriangle",
     pergunta: "Barulho ao passar em buraco: o que é?",
     keywordPrincipal: "barulho na suspensão ao passar em buraco",

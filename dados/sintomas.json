@@ -9,7 +9,8 @@
     "setorProvavel": "Direção hidráulica",
     "explicacao": "Volante pesado quase sempre vem do sistema hidráulico. As causas mais comuns são nível baixo ou fluido velho, correia da bomba folgada, bomba perdendo pressão e caixa de direção com desgaste interno. Em carro com direção elétrica, também pode ser sensor ou o próprio módulo.",
     "urgencia": "Média. Dirigir com direção pesada aumenta o esforço em manobra e piora rápido. Se ficou pesado de um dia para o outro, olhe antes de rodar.",
-    "servicoRelacionado": "direcao-hidraulica"
+    "servicoRelacionado": "direcao-hidraulica",
+    "curto": "volante pesado"
   },
   {
     "slug": "barulho-ao-virar-o-volante",
@@ -21,7 +22,8 @@
     "setorProvavel": "Direção hidráulica ou suspensão",
     "explicacao": "Ronco que aumenta ao virar costuma ser bomba trabalhando com nível baixo ou já gasta. Estalo seco ao esterçar aponta mais para pivô, bandeja ou coluna. O tipo de ruído muda o diagnóstico, então descrever o som ajuda muito no atendimento.",
     "urgencia": "Média. Ronco de bomba trabalhando seca destrói a bomba em pouco tempo.",
-    "servicoRelacionado": "direcao-hidraulica"
+    "servicoRelacionado": "direcao-hidraulica",
+    "curto": "barulho ao virar o volante"
   },
   {
     "slug": "carro-puxando-para-um-lado",
@@ -33,7 +35,8 @@
     "setorProvavel": "Alinhamento, freio ou suspensão",
     "explicacao": "As quatro causas mais frequentes são alinhamento fora de especificação, pressão desigual entre os pneus, freio de um lado travando e desgaste em componente de suspensão. Alinhar sem verificar folga antes é dinheiro jogado fora, porque volta a desalinhar.",
     "urgencia": "Média. Come pneu e cansa o motorista. Se puxa forte na frenagem, é freio e sobe para urgente.",
-    "servicoRelacionado": "alinhamento-e-balanceamento"
+    "servicoRelacionado": "alinhamento-e-balanceamento",
+    "curto": "carro puxando para um lado"
   },
   {
     "slug": "volante-vibrando",
@@ -45,7 +48,8 @@
     "setorProvavel": "Balanceamento",
     "explicacao": "Vibração que aparece numa faixa de velocidade e some depois é a assinatura clássica de desbalanceamento. Também pode ser roda empenada, pneu deformado, disco de freio irregular quando a vibração aparece só ao frear, e folga em componente de direção.",
     "urgencia": "Baixa a média. Desconfortável, e acelera o desgaste de pneu e de rolamento.",
-    "servicoRelacionado": "alinhamento-e-balanceamento"
+    "servicoRelacionado": "alinhamento-e-balanceamento",
+    "curto": "volante vibrando"
   },
   {
     "slug": "carro-pulando-nos-buracos",
@@ -57,7 +61,8 @@
     "setorProvavel": "Suspensão",
     "explicacao": "Carro que continua balançando depois do buraco quase sempre tem amortecedor gasto. Amortecedor perdendo eficiência não é só conforto, ele aumenta a distância de frenagem e reduz a aderência em curva. Mola quebrada, coxim e bucha entram na mesma lista.",
     "urgencia": "Média a alta. Afeta frenagem e estabilidade.",
-    "servicoRelacionado": "suspensao"
+    "servicoRelacionado": "suspensao",
+    "curto": "carro pulando nos buracos"
   },
   {
     "slug": "vazamento-de-oleo-na-direcao",
@@ -69,7 +74,8 @@
     "setorProvavel": "Direção hidráulica",
     "explicacao": "Óleo avermelhado ou claro na região da roda dianteira normalmente é fluido de direção. Vem de mangueira, retentor da caixa ou vedação da bomba. Rodar com nível baixo é o caminho mais rápido para perder a bomba e a caixa juntas.",
     "urgencia": "Alta. Confira o nível antes de rodar.",
-    "servicoRelacionado": "direcao-hidraulica"
+    "servicoRelacionado": "direcao-hidraulica",
+    "curto": "vazamento de óleo"
   },
   {
     "slug": "pneu-gastando-torto",
@@ -81,7 +87,8 @@
     "setorProvavel": "Alinhamento e suspensão",
     "explicacao": "O desenho do desgaste diz a causa. Gasto na borda interna ou externa aponta para cambagem ou convergência fora de especificação. Gasto no centro é excesso de pressão, gasto nas duas bordas é pressão baixa. Desgaste irregular em manchas aponta para amortecedor.",
     "urgencia": "Média. É prejuízo silencioso, pneu novo dura metade.",
-    "servicoRelacionado": "alinhamento-e-balanceamento"
+    "servicoRelacionado": "alinhamento-e-balanceamento",
+    "curto": "pneu gastando torto"
   },
   {
     "slug": "freio-rangendo",
@@ -93,7 +100,8 @@
     "setorProvavel": "Freios",
     "explicacao": "Rangido metálico normalmente é pastilha no fim ou disco marcado. Pedal que desce mais que o normal, ou que vai ao fundo, indica ar no sistema, vazamento ou cilindro comprometido. Freio que faz barulho é aviso, freio silencioso e sem eficiência é pior.",
     "urgencia": "Alta. Freio não espera a próxima semana.",
-    "servicoRelacionado": "freios"
+    "servicoRelacionado": "freios",
+    "curto": "freio rangendo"
   },
   {
     "slug": "folga-no-volante",
@@ -105,7 +113,8 @@
     "setorProvavel": "Direção mecânica",
     "explicacao": "Folga é o giro morto antes da roda responder. Vem de caixa de direção desgastada, terminal, barra axial ou pivô. Reduz a precisão da direção justamente na situação em que ela mais importa, que é a manobra de emergência.",
     "urgencia": "Alta se a folga for grande. Item de reprovação em inspeção.",
-    "servicoRelacionado": "direcao-mecanica"
+    "servicoRelacionado": "direcao-mecanica",
+    "curto": "folga no volante"
   },
   {
     "slug": "barulho-em-buraco",
@@ -117,6 +126,7 @@
     "setorProvavel": "Suspensão",
     "explicacao": "Batida seca ao passar em irregularidade costuma ser bucha, coxim, batente ou bieleta. Estalo repetido aponta para pivô ou terminal. É o tipo de ruído que piora devagar até o motorista se acostumar, e é justamente por isso que gera dano maior.",
     "urgencia": "Média.",
-    "servicoRelacionado": "suspensao"
+    "servicoRelacionado": "suspensao",
+    "curto": "barulho em buraco"
   }
 ]
