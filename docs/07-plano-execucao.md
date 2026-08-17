@@ -41,12 +41,12 @@ Marque os checkboxes conforme avança. Não pule fase: a fase 2 depende de token
 
 ### Tarefa 3. Conteúdo tipado
 
-- [ ] Copiar `dados/negocio.json` para `src/content/negocio.ts` como objeto `as const`, com tipo exportado
-- [ ] Mesma coisa para `servicos.ts`, `sintomas.ts` e `duvidas.ts`
-- [ ] `src/lib/whatsapp.ts` com `linkWhatsApp()` conforme doc 06 seção 6.6
-- [ ] `src/lib/schema.ts` com `schemaOficina()`, `schemaServico()`, `schemaBreadcrumb()`
-- [ ] `npx tsc --noEmit` limpo
-- [ ] Commit: `adiciona conteudo tipado e utilitarios de whatsapp e schema`
+- [x] Copiar `dados/negocio.json` para `src/content/negocio.ts` como objeto `as const`, com tipo exportado
+- [x] Mesma coisa para `servicos.ts`, `sintomas.ts` e `duvidas.ts` (criado `dados/duvidas.json`, ausente no pacote original, com perguntas de `palavras-chave.md` camada 4 e respostas só com fatos já confirmados)
+- [x] `src/lib/whatsapp.ts` com `linkWhatsApp()` conforme doc 06 seção 6.6
+- [x] `src/lib/schema.ts` com `schemaOficina()`, `schemaServico()`, `schemaBreadcrumb()` (mais `schemaWebsite()`, usado na Tarefa 4)
+- [x] `npx tsc --noEmit` limpo
+- [x] Commit: `adiciona conteudo tipado e utilitarios de whatsapp e schema`
 
 ### Tarefa 4. Layout base
 
