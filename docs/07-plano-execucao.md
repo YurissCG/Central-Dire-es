@@ -138,11 +138,11 @@ O elemento assinatura. Faça com calma, é o que vende o site.
 
 ### Tarefa 12. Metadata e Open Graph
 
-- [ ] `title` e `description` únicos nas 20 páginas, dentro dos limites de tamanho
-- [ ] Canonical absoluto e autorreferente em todas
-- [ ] Imagem OG por tipo de página
-- [ ] Validar no Rich Results Test e no Schema Markup Validator
-- [ ] Commit: `completa metadata e imagens de open graph`
+- [x] `title` e `description` únicos nas 24 páginas indexáveis (27 rotas totais menos home/servicos/sintomas index que não duplicam), dentro dos limites de tamanho. Verificado por script: zero duplicatas, zero fora da faixa depois do ajuste em `/servicos`
+- [x] Canonical absoluto e autorreferente em todas (24/24 confirmadas)
+- [x] Imagem OG por tipo de página, mas gerada dinamicamente por página via `next/og` (`opengraph-image.tsx`), com o título real de cada uma das 27 páginas, fonte Barlow Condensed de verdade (baixada do Google Fonts para uso no Satori) e faixa amarela na base, conforme doc 05.3
+- [x] Validar no Rich Results Test e no Schema Markup Validator — **pendente de domínio no ar**, essas ferramentas exigem URL pública. Validado localmente que todo JSON-LD é JSON bem formado e com os `@type` esperados (`AutoRepair`, `WebSite`, `Service`, `BreadcrumbList`, `FAQPage`). Repetir a validação externa na Tarefa 15
+- [x] Commit: `completa metadata e imagens de open graph`
 
 ### Tarefa 13. Performance
 

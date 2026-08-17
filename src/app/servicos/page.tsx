@@ -9,7 +9,7 @@ const FOCO =
   "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amarelo";
 
 export const metadata: Metadata = {
-  title: "Serviços de Direção, Suspensão e Freios em Santa Luzia",
+  title: "Serviços de Direção e Suspensão em Santa Luzia",
   description:
     "Direção hidráulica, caixa remanufaturada, direção mecânica, suspensão, alinhamento e freios em São Benedito, Santa Luzia. Orçamento no WhatsApp.",
   alternates: { canonical: "/servicos" },
