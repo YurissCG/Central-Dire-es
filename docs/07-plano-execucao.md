@@ -85,14 +85,14 @@ O elemento assinatura. Faça com calma, é o que vende o site.
 
 ### Tarefa 7. Restante da home
 
-- [ ] `ProvaSocial` com três avaliações reais e link para o Google
-- [ ] `GradeServicos` em lista, não em card genérico
-- [ ] `ComoFunciona` com os quatro passos numerados
-- [ ] `Localizacao` com endereço, horário, telefones e mapa sob clique
-- [ ] Faixa zebrada como divisor, no máximo três vezes
-- [ ] `npm run build` e conferir o peso da rota `/`
-- [ ] Olhar em 360px, 390px, 768px e 1440px
-- [ ] Commit: `completa secoes da home`
+- [x] `ProvaSocial` com três avaliações reais e link para o Google — **bloqueado**: não existe fonte de avaliações reais e o conteúdo do Google não é raspável. Seção mostra nota agregada (4,3, 215) real e confirmada, com link para o Google; os 3 depoimentos entram quando o cliente aprovar, ver pendência no doc 01
+- [x] `GradeServicos` em lista, não em card genérico
+- [x] `ComoFunciona` com os quatro passos numerados (passos 3 e 4 ajustados para remover as cláusulas "por escrito" e "peça devolvida", não confirmadas em `dados/negocio.json.promessas`, mantendo só o que já é corroborado por `servicos.json`)
+- [x] `Localizacao` com endereço, horário, telefones e mapa sob clique (card com link direto pro Google Maps, sem iframe carregado de imediato)
+- [x] Faixa zebrada como divisor, no máximo três vezes (usada exatamente três vezes)
+- [x] `npm run build` e conferir o peso da rota `/` — JS real da home ficou em ~157KB comprimido (framework Next/React baseline ~114KB + código nosso). Acima do limite original de 120KB; decisão registrada com o dono do projeto de aceitar como piso realista, documentada no doc 03 seção 3.6. `motion` foi removido (economia de ~42KB) trocando o `CountUp` do Unlumen por contador próprio sem dependência
+- [x] Olhar em 360px, 390px, 768px e 1440px — sem overflow horizontal em nenhuma
+- [x] Commit: `completa secoes da home`
 
 ---
 

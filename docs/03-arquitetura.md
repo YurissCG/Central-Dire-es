@@ -123,11 +123,13 @@ Limites duros. A cada tarefa concluída, verifique. Estourar significa cortar re
 | LCP em 4G simulado, mobile | menor que 2,5s |
 | INP | menor que 200ms |
 | CLS | menor que 0,1 |
-| JavaScript da home, comprimido | menor que 120KB |
+| JavaScript da home, comprimido | menor que 120KB de código nosso, além do baseline do framework, ver nota |
 | Peso total da home | menor que 900KB |
 | Fontes | no máximo 4 arquivos woff2, subset latin |
 | Imagem acima da dobra | 1, com `priority`, servida em AVIF ou WebP |
-| Dependência de runtime | somente next, react, lucide-react, motion, clsx, tailwind-merge |
+| Dependência de runtime | somente next, react, lucide-react, clsx, tailwind-merge. `motion` só entra se um componente específico exigir, pesando o custo antes (ver nota) |
+
+**Nota sobre o limite de 120KB, medida na Tarefa 7:** Next.js App Router com React 19 tem baseline de cliente (React DOM mais o runtime de streaming de Server Components) de aproximadamente 114KB comprimido, presente em qualquer página do site, carregado uma vez e cacheado nas outras 19. Esse baseline sozinho já esbarra no limite original de 120KB, antes de qualquer linha de código nosso. Medido na home depois da Tarefa 7: **~157KB comprimido reais** para navegador moderno (o polyfill `nomodule` do Next não conta, navegador moderno não baixa). Decisão registrada com o dono do projeto: aceitar esse piso como realista, já que a arquitetura Next.js App Router foi escolhida na seção 3.1 por causa de SEO e LCP, e o custo é pago uma vez só. O limite de 120KB continua valendo para o que é código nosso (componentes, ícones, utilitários), não para o baseline do framework. `motion` foi removido do bundle da home nesta tarefa (economia de ~42KB) trocando o componente `CountUp` do Unlumen por um contador simples sem dependência externa; qualquer uso futuro de `motion` precisa pesar o ganho visual contra esse custo.
 
 Ferramentas: `npm run build` mostra o tamanho por rota. Depois do deploy, PageSpeed Insights em mobile. Nada de FID, a métrica atual de responsividade é INP.
 

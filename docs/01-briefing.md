@@ -100,3 +100,4 @@ Confirmar antes da entrega final. Nada disso entra no site sem resposta.
 - [ ] Domínio: já tem, ou precisa registrar. Sugestões: centraldirecoes.com.br, centraldirecoes.com
 - [ ] Acesso ao Google Business Profile, obrigatório para a fase de SEO local
 - [ ] Fotos oficiais em alta resolução, ver `docs/09-imagens-e-midia.md`
+- [ ] 3 avaliações reais do Google para citar na seção Prova Social (nome como aparece publicamente, nota, trecho fiel). O conteúdo de avaliação do Google não é acessível por scraping automatizado, então isso não pode ser resolvido sem o cliente. Até lá, `src/content/depoimentos.ts` fica vazio e a seção mostra só a nota agregada (4,3, 215 avaliações), que já é dado confirmado
