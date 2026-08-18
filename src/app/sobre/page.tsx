@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { MessageCircle } from "lucide-react";
 import { NEGOCIO } from "@/content/negocio";
+import { EQUIPE } from "@/content/equipe";
 import { Button } from "@/components/ui/button";
 import { linkWhatsApp } from "@/lib/whatsapp";
 import { schemaBreadcrumb } from "@/lib/schema";
@@ -52,6 +54,24 @@ export default function PaginaSobre() {
           encontrado, e explica o motivo de cada troca. Isso vale tanto pra quem passa uma vez
           quanto pra motorista de aplicativo e frota, que não pode ficar com o carro parado.
         </p>
+
+        {EQUIPE.length > 0 && (
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+            {EQUIPE.map((membro) => (
+              <div key={membro.nome} className="superficie flex flex-col items-center gap-3 p-6 text-center">
+                <Image
+                  src={membro.foto}
+                  alt={`${membro.nome}, ${membro.funcao}`}
+                  width={120}
+                  height={120}
+                  className="rounded-full object-cover"
+                />
+                <p className="text-corpo-lg text-branco">{membro.nome}</p>
+                <p className="etiqueta text-aco-fosco">{membro.funcao}</p>
+              </div>
+            ))}
+          </div>
+        )}
 
         <div className="mt-12 flex flex-wrap gap-x-12 gap-y-6">
           <div>
