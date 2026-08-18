@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Menu, MessageCircle, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -69,8 +70,18 @@ export function Header() {
   return (
     <header className="border-b border-grafite-borda bg-preto-oficina">
       <div className="mx-auto flex h-16 w-full max-w-[1200px] items-center justify-between px-5">
-        <Link href="/" className={cn("font-display text-h3 uppercase text-branco", FOCO)}>
-          Central Direções
+        <Link href="/" className={cn("flex items-center gap-2.5", FOCO)}>
+          <Image
+            src="/logo-central-direcoes.png"
+            alt="Central Direções"
+            width={44}
+            height={44}
+            priority
+            className="size-11 shrink-0"
+          />
+          <span className="font-display text-h3 uppercase leading-none text-branco">
+            Central Direções
+          </span>
         </Link>
 
         <nav aria-label="Principal" className="hidden items-center gap-6 md:flex">
