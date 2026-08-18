@@ -11,10 +11,8 @@ import { EntradaAoRolar } from "@/components/motion/EntradaAoRolar";
 export default function Home() {
   return (
     <>
+      <CarrosselEquipe />
       <Hero />
-      <EntradaAoRolar>
-        <CarrosselEquipe />
-      </EntradaAoRolar>
       <div className="faixa-zebrada" aria-hidden="true" />
       <PainelDiagnostico />
       <EntradaAoRolar>

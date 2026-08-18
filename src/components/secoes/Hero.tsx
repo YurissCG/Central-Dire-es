@@ -1,29 +1,12 @@
-import Image from "next/image";
 import { MessageCircle, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { NEGOCIO } from "@/content/negocio";
-import { IMAGENS } from "@/content/imagens";
 import { linkLigar, linkWhatsApp } from "@/lib/whatsapp";
 
 export function Hero() {
   return (
-    <section id="hero" className="relative isolate flex min-h-[560px] items-end overflow-hidden md:min-h-[680px]">
-      <Image
-        src={IMAGENS.hero}
-        alt=""
-        aria-hidden="true"
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover object-center"
-        style={{ filter: "saturate(0.85) contrast(1.05)" }}
-      />
-      <div
-        className="absolute inset-0 bg-gradient-to-t from-preto-oficina/90 via-preto-oficina/55 to-preto-oficina/15"
-        aria-hidden="true"
-      />
-
-      <div className="relative z-10 mx-auto flex w-full max-w-[1200px] flex-col gap-6 px-5 py-12 md:py-20">
+    <section id="hero" className="mx-auto w-full max-w-[1200px] px-5 py-10 md:py-16">
+      <div className="flex w-full flex-col gap-6">
         <p className="etiqueta text-amarelo">São Benedito, Santa Luzia, MG</p>
 
         <h1 className="font-display text-display uppercase leading-[0.92] tracking-[-0.02em] text-branco">
