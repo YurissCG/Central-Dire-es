@@ -34,9 +34,9 @@ export function Hero() {
           do seu carro
         </h1>
 
-        <p className="max-w-[68ch] text-corpo-lg leading-[1.65] text-aco">
-          Somos especialistas em direção hidráulica e direção mecânica. Recuperamos a caixa de
-          direção aqui dentro, com peça remanufaturada, por menos do que custa uma nova.
+        <p className="max-w-[52ch] text-corpo-lg leading-[1.5] text-aco">
+          Direção hidráulica e mecânica. Caixa remanufaturada aqui dentro, por menos que uma
+          peça nova.
         </p>
 
         <div className="flex flex-wrap gap-3">

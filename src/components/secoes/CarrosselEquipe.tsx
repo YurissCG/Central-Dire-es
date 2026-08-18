@@ -64,6 +64,7 @@ export function CarrosselEquipe() {
                 sizes="(min-width: 1200px) 1150px, 100vw"
                 className="object-cover"
                 loading="lazy"
+                style={{ filter: "saturate(0.7) contrast(1.05) brightness(0.82)" }}
               />
             )}
           </div>
