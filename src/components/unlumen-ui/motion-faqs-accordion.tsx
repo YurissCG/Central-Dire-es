@@ -1,5 +1,9 @@
 "use client";
 
+// AVISO: arquivo gerado por `npx shadcn add @unlumen-ui/motion-faqs-accordion`. Cores, foco e
+// heading foram customizados manualmente pra bater com a identidade do site (ver Tarefa 5 do
+// plano de refresh visual). Rodar o comando de novo reescreve este arquivo e apaga essas
+// customizações sem erro de build, confira o diff antes de sobrescrever.
 import * as React from "react";
 import { motion } from "motion/react";
 
@@ -54,61 +58,63 @@ function AccordionItem({
       initial={false}
       style={{ originX: 0.5, originY: 0 }}
     >
-      <button
-        id={itemId}
-        type="button"
-        aria-controls={panelId}
-        aria-expanded={isOpen}
-        onClick={onToggle}
-        className="flex min-h-11 w-full cursor-pointer select-none items-center justify-between gap-4 px-7 py-5 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amarelo"
-      >
-        <span className="text-corpo-lg font-medium leading-snug text-branco">
-          {item.question}
-        </span>
-
-        <motion.span
-          aria-hidden="true"
-          initial={false}
-          animate={{
-            rotate: isOpen ? 180 : 0,
-            scale: isOpen ? 1.05 : 1,
-          }}
-          transition={{ type: "spring", stiffness: 480, damping: 28 }}
-          className="inline-flex size-12 shrink-0 items-center justify-center text-amarelo"
+      <h3 className="flex">
+        <button
+          id={itemId}
+          type="button"
+          aria-controls={panelId}
+          aria-expanded={isOpen}
+          onClick={onToggle}
+          className="flex min-h-11 w-full cursor-pointer select-none items-center justify-between gap-4 px-7 py-5 text-left focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amarelo"
         >
-          {isOpen ? (
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 14 2"
-              fill="none"
-              aria-hidden
-            >
-              <path
-                d="M1 1h12"
-                stroke="currentColor"
-                strokeWidth="1.75"
-                strokeLinecap="round"
-              />
-            </svg>
-          ) : (
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 14 14"
-              fill="none"
-              aria-hidden
-            >
-              <path
-                d="M7 1v12M1 7h12"
-                stroke="currentColor"
-                strokeWidth="1.75"
-                strokeLinecap="round"
-              />
-            </svg>
-          )}
-        </motion.span>
-      </button>
+          <span className="text-corpo-lg font-medium leading-snug text-branco">
+            {item.question}
+          </span>
+
+          <motion.span
+            aria-hidden="true"
+            initial={false}
+            animate={{
+              rotate: isOpen ? 180 : 0,
+              scale: isOpen ? 1.05 : 1,
+            }}
+            transition={{ type: "spring", stiffness: 480, damping: 28 }}
+            className="inline-flex size-12 shrink-0 items-center justify-center text-amarelo"
+          >
+            {isOpen ? (
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 2"
+                fill="none"
+                aria-hidden
+              >
+                <path
+                  d="M1 1h12"
+                  stroke="currentColor"
+                  strokeWidth="1.75"
+                  strokeLinecap="round"
+                />
+              </svg>
+            ) : (
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                aria-hidden
+              >
+                <path
+                  d="M7 1v12M1 7h12"
+                  stroke="currentColor"
+                  strokeWidth="1.75"
+                  strokeLinecap="round"
+                />
+              </svg>
+            )}
+          </motion.span>
+        </button>
+      </h3>
 
       <motion.div
         id={panelId}
@@ -157,7 +163,7 @@ export function MotionAccordion({
 
   return (
     <div className={cn("w-full", className)}>
-      <div className="flex flex-col rounded-[34px] p-3 " style={{ gap }}>
+      <div className="flex flex-col" style={{ gap }}>
         {items.map((item, i) => (
           <AccordionItem
             key={i}
