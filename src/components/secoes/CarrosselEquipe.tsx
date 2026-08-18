@@ -48,7 +48,7 @@ export function CarrosselEquipe() {
   }
 
   return (
-    <section className="mx-auto w-full max-w-[1200px] px-5 py-12 md:py-16">
+    <section className="mx-auto w-full max-w-[1200px] border-t border-grafite-borda px-5 py-12 md:py-16">
       <div
         ref={trilhoRef}
         onScroll={aoRolar}

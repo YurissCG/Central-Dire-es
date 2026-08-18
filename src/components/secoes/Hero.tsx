@@ -7,7 +7,7 @@ import { linkLigar, linkWhatsApp } from "@/lib/whatsapp";
 
 export function Hero() {
   return (
-    <section className="relative isolate flex min-h-[560px] items-end overflow-hidden md:min-h-[680px]">
+    <section id="hero" className="relative isolate flex min-h-[560px] items-end overflow-hidden md:min-h-[680px]">
       <Image
         src={IMAGENS.hero}
         alt=""
@@ -18,7 +18,10 @@ export function Hero() {
         className="object-cover object-center"
         style={{ filter: "saturate(0.85) contrast(1.05)" }}
       />
-      <div className="absolute inset-0 bg-preto-oficina/45" aria-hidden="true" />
+      <div
+        className="absolute inset-0 bg-gradient-to-t from-preto-oficina/90 via-preto-oficina/55 to-preto-oficina/15"
+        aria-hidden="true"
+      />
 
       <div className="relative z-10 mx-auto flex w-full max-w-[1200px] flex-col gap-6 px-5 py-12 md:py-20">
         <p className="etiqueta text-amarelo">São Benedito, Santa Luzia, MG</p>
@@ -52,7 +55,7 @@ export function Hero() {
         </div>
 
         <div
-          className="flex flex-wrap items-center gap-x-4 gap-y-2 font-mono text-etiqueta uppercase tracking-[0.14em] text-aco"
+          className="flex flex-wrap items-center gap-x-3 gap-y-1.5 font-mono text-etiqueta uppercase tracking-[0.08em] text-aco sm:gap-x-4 sm:tracking-[0.14em]"
           style={{ fontVariantNumeric: "tabular-nums" }}
         >
           <span>{NEGOCIO.provaSocial.notaGoogle.toString().replace(".", ",")} no Google</span>

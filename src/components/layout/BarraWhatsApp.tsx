@@ -9,13 +9,16 @@ export function BarraWhatsApp() {
   const [escondida, setEscondida] = useState(false);
 
   useEffect(() => {
-    const painel = document.getElementById("painel-diagnostico");
-    if (!painel) return;
+    // O Hero já tem os próprios botões de WhatsApp e Ligar em destaque:
+    // a barra fixa só entra depois que ele sai de tela, senão duplica CTA
+    // na primeira dobra.
+    const hero = document.getElementById("hero");
+    if (!hero) return;
 
     const observer = new IntersectionObserver(([entrada]) => setEscondida(entrada.isIntersecting), {
       threshold: 0,
     });
-    observer.observe(painel);
+    observer.observe(hero);
     return () => observer.disconnect();
   }, []);
 
