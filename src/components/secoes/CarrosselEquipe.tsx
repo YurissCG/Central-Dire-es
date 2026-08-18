@@ -54,7 +54,7 @@ export function CarrosselEquipe() {
         className="flex w-full snap-x snap-mandatory overflow-x-auto scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
       >
         {SLIDES.map((src, indice) => (
-          <div key={src} className="relative aspect-square w-full shrink-0 snap-center overflow-hidden sm:aspect-[3/2] md:aspect-[16/9]">
+          <div key={src} className="relative aspect-[1376/768] w-full shrink-0 snap-center overflow-hidden">
             {(indice === 0 || extrasProntos) && (
               <Image
                 src={src}
