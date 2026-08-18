@@ -170,3 +170,13 @@ Todo componente adicionado precisa ser reestilizado para os tokens desta paleta.
 ## 2.9 Revisão da direção criativa
 
 Feita antes de codar, como manda o processo de design. O primeiro rascunho da paleta era preto com um único vermelho de destaque, que é justamente um dos padrões automáticos de IA. O que mudou: entrou o amarelo de sinalização como terceira cor com função real, e o divisor virou fita zebrada em vez de linha fina. A tipografia saiu de "sans neutra com serifada de display" para condensada industrial com mono técnica, que vem do lettering do logo e das etiquetas de oficina. A ousadia está concentrada em um lugar só, o Painel de Diagnóstico. O resto é disciplinado e quieto.
+
+## 2.10 Revisão pós-feedback do dono, 2026-08-18
+
+Depois de ver o site publicado, o dono da oficina revisou a identidade real da marca (logo em
+close e o feed do Instagram) e pediu um site mais vivo: menos área escura vazia, mais vermelho,
+mais foto. Proporção revisada: **55% preto/grafite, 20% branco/aço, 20% vermelho, 5% amarelo**
+(a proporção original da seção 2.2 era 70/20/8/2). Na prática: seções alternam fundo
+`--color-preto-oficina` e `--color-grafite` em vez de preto contínuo, e mais elementos usam
+`.superficie` ou `border-vermelho`/`bg-vermelho` como destaque estrutural. Detalhe completo em
+`docs/superpowers/specs/2026-08-18-refresh-visual-vivo-design.md`.
