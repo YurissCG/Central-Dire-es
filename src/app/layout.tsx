@@ -7,6 +7,7 @@ import { schemaOficina, schemaWebsite } from "@/lib/schema";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { BarraWhatsApp } from "@/components/layout/BarraWhatsApp";
+import { ProvedorMotion } from "@/components/motion/ProvedorMotion";
 
 const barlowCondensed = Barlow_Condensed({
   subsets: ["latin"],
@@ -72,12 +73,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         >
           Pular para o conteúdo
         </a>
-        <Header />
-        <main id="conteudo" className="flex-1 pb-[84px] md:pb-0">
-          {children}
-        </main>
-        <Footer />
-        <BarraWhatsApp />
+        <ProvedorMotion>
+          <Header />
+          <main id="conteudo" className="flex-1 pb-[84px] md:pb-0">
+            {children}
+          </main>
+          <Footer />
+          <BarraWhatsApp />
+        </ProvedorMotion>
       </body>
     </html>
   );
