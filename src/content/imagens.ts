@@ -3,4 +3,5 @@
 // só neste arquivo, ver docs/09-imagens-e-midia.md secao 9.10.
 export const IMAGENS = {
   hero: "/fotos/temporarias/hero-direcao.jpg",
+  texturaMetal: "/fotos/temporarias/textura-metal.jpg",
 } as const;
