@@ -10,6 +10,15 @@ const SLIDES = IMAGENS.carrosselEquipe;
 export function CarrosselEquipe() {
   const trilhoRef = useRef<HTMLDivElement>(null);
   const [ativo, setAtivo] = useState(0);
+  // Só o primeiro slide entra na primeira renderização: os outros quatro
+  // arquivos, se descobertos de imediato, disputam banda com a foto do
+  // Hero e estouram o orçamento de LCP (ver docs/03-arquitetura.md 3.6).
+  const [extrasProntos, setExtrasProntos] = useState(false);
+
+  useEffect(() => {
+    const id = setTimeout(() => setExtrasProntos(true), 800);
+    return () => clearTimeout(id);
+  }, []);
 
   useEffect(() => {
     const reduzido = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -47,14 +56,16 @@ export function CarrosselEquipe() {
       >
         {SLIDES.map((src, indice) => (
           <div key={src} className="superficie relative aspect-[16/9] w-full shrink-0 snap-center overflow-hidden sm:aspect-[16/8]">
-            <Image
-              src={src}
-              alt="Equipe da Central Direções, especialistas em direção hidráulica e mecânica"
-              fill
-              sizes="(min-width: 1200px) 1150px, 100vw"
-              className="object-cover"
-              loading="lazy"
-            />
+            {(indice === 0 || extrasProntos) && (
+              <Image
+                src={src}
+                alt="Equipe da Central Direções, especialistas em direção hidráulica e mecânica"
+                fill
+                sizes="(min-width: 1200px) 1150px, 100vw"
+                className="object-cover"
+                loading="lazy"
+              />
+            )}
           </div>
         ))}
       </div>

@@ -13,7 +13,7 @@ export function ComoFunciona() {
   return (
     <EntradaAoRolar>
       <section className="mx-auto w-full max-w-[1200px] px-5 py-16 md:py-24">
-        <div className="grid gap-8 md:grid-cols-[1fr_320px] md:items-center md:gap-10">
+        <div className="grid gap-8 md:grid-cols-2 md:items-center md:gap-12">
           <div>
             <h2 className="font-display text-h2 uppercase leading-none text-branco">Como funciona</h2>
 
@@ -33,15 +33,17 @@ export function ComoFunciona() {
             </ol>
           </div>
 
-          <Image
-            src={IMAGENS.comoFunciona}
-            alt="Carro com o capô aberto e a lataria parcialmente desmontada durante o reparo na oficina"
-            width={320}
-            height={180}
-            loading="lazy"
-            className="h-auto w-full rounded-sm object-cover md:h-[180px] md:w-[320px]"
-            style={{ filter: "saturate(0.75) contrast(1.08) brightness(0.85)" }}
-          />
+          <div className="superficie relative aspect-[4/3] w-full overflow-hidden md:aspect-[5/4]">
+            <Image
+              src={IMAGENS.comoFunciona}
+              alt="Carro com o capô aberto e a lataria parcialmente desmontada durante o reparo na oficina"
+              fill
+              loading="lazy"
+              sizes="(min-width: 768px) 50vw, 100vw"
+              className="object-cover"
+              style={{ filter: "saturate(0.75) contrast(1.08) brightness(0.85)" }}
+            />
+          </div>
         </div>
       </section>
     </EntradaAoRolar>

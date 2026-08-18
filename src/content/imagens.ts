@@ -10,7 +10,15 @@ export const IMAGENS = {
   // Banners ilustrados gerados por IA a pedido do cliente (assets-marca/img,
   // fora do controle de versão). Elemento decorativo de marca, nao substitui
   // foto real da equipe (ver src/content/equipe.ts).
-  carrosselEquipe: ["/marca/carrossel-1.jpg", "/marca/carrossel-2.jpg", "/marca/carrossel-3.jpg"] as string[],
+  carrosselEquipe: [
+    "/marca/carrossel-1.jpg",
+    "/marca/carrossel-2.jpg",
+    "/marca/carrossel-3.jpg",
+    "/marca/carrossel-4.jpg",
+    "/marca/carrossel-5.jpg",
+  ] as string[],
+  videoEquipe: "/marca/equipe-video.mp4",
+  videoEquipePoster: "/marca/equipe-video-poster.jpg",
   servicos: {
     "direcao-hidraulica": "/fotos/temporarias/servico-direcao-hidraulica.jpg",
     "caixa-de-direcao-remanufaturada": "/fotos/temporarias/servico-caixa-de-direcao-remanufaturada.jpg",

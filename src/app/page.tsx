@@ -5,6 +5,7 @@ import { GradeServicos } from "@/components/secoes/GradeServicos";
 import { ComoFunciona } from "@/components/secoes/ComoFunciona";
 import { Localizacao } from "@/components/secoes/Localizacao";
 import { CarrosselEquipe } from "@/components/secoes/CarrosselEquipe";
+import { VideoEquipe } from "@/components/secoes/VideoEquipe";
 import { EntradaAoRolar } from "@/components/motion/EntradaAoRolar";
 
 export default function Home() {
@@ -26,6 +27,9 @@ export default function Home() {
       <div className="bg-grafite">
         <ComoFunciona />
       </div>
+      <EntradaAoRolar>
+        <VideoEquipe />
+      </EntradaAoRolar>
       <div className="faixa-zebrada" aria-hidden="true" />
       <EntradaAoRolar>
         <Localizacao />
