@@ -21,15 +21,15 @@ export default function Home() {
         <ProvaSocial />
       </EntradaAoRolar>
       <div className="faixa-zebrada" aria-hidden="true" />
+      <EntradaAoRolar>
+        <VideoEquipe />
+      </EntradaAoRolar>
       <div className="bg-grafite">
         <GradeServicos />
       </div>
       <div className="bg-grafite">
         <ComoFunciona />
       </div>
-      <EntradaAoRolar>
-        <VideoEquipe />
-      </EntradaAoRolar>
       <div className="faixa-zebrada" aria-hidden="true" />
       <EntradaAoRolar>
         <Localizacao />

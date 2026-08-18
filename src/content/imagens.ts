@@ -13,7 +13,6 @@ export const IMAGENS = {
   carrosselEquipe: [
     "/marca/carrossel-1.jpg",
     "/marca/carrossel-2.jpg",
-    "/marca/carrossel-3.jpg",
     "/marca/carrossel-4.jpg",
     "/marca/carrossel-5.jpg",
   ] as string[],
