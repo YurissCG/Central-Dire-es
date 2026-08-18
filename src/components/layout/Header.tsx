@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Menu, MessageCircle, X } from "lucide-react";
+import { motion } from "motion/react";
 import { Button } from "@/components/ui/button";
 import { linkWhatsApp } from "@/lib/whatsapp";
 import { cn } from "@/lib/utils";
@@ -20,6 +21,7 @@ const NAV = [
 
 export function Header() {
   const [aberto, setAberto] = useState(false);
+  const [emHover, setEmHover] = useState<string | null>(null);
   const drawerRef = useRef<HTMLDivElement>(null);
   const botaoRef = useRef<HTMLButtonElement>(null);
 
@@ -84,15 +86,28 @@ export function Header() {
           </span>
         </Link>
 
-        <nav aria-label="Principal" className="hidden items-center gap-6 md:flex">
+        <nav aria-label="Principal" className="hidden items-center gap-1 md:flex">
           {NAV.map((item) => (
-            <Link
+            <div
               key={item.href}
-              href={item.href}
-              className={cn("text-corpo text-aco transition-colors hover:text-branco", FOCO)}
+              className="relative"
+              onMouseEnter={() => setEmHover(item.href)}
+              onMouseLeave={() => setEmHover(null)}
             >
-              {item.label}
-            </Link>
+              {emHover === item.href && (
+                <motion.span
+                  layoutId="indicador-nav"
+                  className="absolute inset-0 rounded-[var(--radius)] bg-grafite-borda"
+                  transition={{ duration: 0.15 }}
+                />
+              )}
+              <Link
+                href={item.href}
+                className={cn("relative z-10 block px-3 py-2 text-corpo text-aco transition-colors hover:text-branco", FOCO)}
+              >
+                {item.label}
+              </Link>
+            </div>
           ))}
         </nav>
 
