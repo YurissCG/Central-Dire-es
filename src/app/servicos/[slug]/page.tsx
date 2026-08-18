@@ -7,6 +7,7 @@ import { SERVICOS } from "@/content/servicos";
 import { SINTOMAS } from "@/content/sintomas";
 import { NEGOCIO } from "@/content/negocio";
 import { IMAGENS } from "@/content/imagens";
+import { EntradaAoRolar } from "@/components/motion/EntradaAoRolar";
 import { Button } from "@/components/ui/button";
 import { linkWhatsApp } from "@/lib/whatsapp";
 import { schemaBreadcrumb, schemaServico } from "@/lib/schema";
@@ -104,66 +105,74 @@ export default async function PaginaServico({ params }: PaginaProps) {
         </div>
 
         {sintomas.length > 0 && (
-          <section className="mt-12">
-            <h2 className="font-display text-h3 uppercase text-branco">Como saber se o seu carro precisa</h2>
-            <ul className="mt-4 flex flex-col gap-3">
-              {sintomas.map((sintoma) => (
-                <li key={sintoma.slug}>
-                  <Link
-                    href={`/sintomas/${sintoma.slug}`}
-                    className={cn(
-                      "superficie block w-fit px-4 py-3 text-corpo text-aco transition-colors hover:border-amarelo hover:text-branco",
-                      FOCO,
-                    )}
-                  >
-                    {sintoma.rotulo}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </section>
+          <EntradaAoRolar atraso={0}>
+            <section className="mt-12">
+              <h2 className="font-display text-h3 uppercase text-branco">Como saber se o seu carro precisa</h2>
+              <ul className="mt-4 flex flex-col gap-3">
+                {sintomas.map((sintoma) => (
+                  <li key={sintoma.slug}>
+                    <Link
+                      href={`/sintomas/${sintoma.slug}`}
+                      className={cn(
+                        "superficie block w-fit px-4 py-3 text-corpo text-aco transition-colors hover:border-amarelo hover:text-branco",
+                        FOCO,
+                      )}
+                    >
+                      {sintoma.rotulo}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          </EntradaAoRolar>
         )}
 
-        <section className="mt-12">
-          <h2 className="font-display text-h3 uppercase text-branco">Como a gente faz</h2>
-          <ol className="mt-4 flex flex-col gap-3">
-            {servico.processo.map((passo, indice) => (
-              <li key={passo} className="flex gap-3">
-                <span
-                  className="etiqueta shrink-0 text-amarelo"
-                  style={{ fontVariantNumeric: "tabular-nums" }}
-                  aria-hidden="true"
-                >
-                  {String(indice + 1).padStart(2, "0")}
-                </span>
-                <span className="text-corpo leading-[1.65] text-aco">{passo}</span>
-              </li>
-            ))}
-          </ol>
-        </section>
+        <EntradaAoRolar atraso={0.05}>
+          <section className="mt-12">
+            <h2 className="font-display text-h3 uppercase text-branco">Como a gente faz</h2>
+            <ol className="mt-4 flex flex-col gap-3">
+              {servico.processo.map((passo, indice) => (
+                <li key={passo} className="flex gap-3">
+                  <span
+                    className="etiqueta shrink-0 text-amarelo"
+                    style={{ fontVariantNumeric: "tabular-nums" }}
+                    aria-hidden="true"
+                  >
+                    {String(indice + 1).padStart(2, "0")}
+                  </span>
+                  <span className="text-corpo leading-[1.65] text-aco">{passo}</span>
+                </li>
+              ))}
+            </ol>
+          </section>
+        </EntradaAoRolar>
 
-        <section className="mt-12">
-          <h2 className="font-display text-h3 uppercase text-branco">
-            Quanto custa {servico.nome.toLowerCase()}?
-          </h2>
-          <p className="mt-4 max-w-[68ch] text-corpo leading-[1.65] text-aco">
-            O preço depende do que a inspeção encontra, da peça que precisa de reparo ou troca e do
-            modelo do carro. A gente testa antes de falar em valor e manda o orçamento pelo WhatsApp,
-            sem compromisso.
-          </p>
-        </section>
+        <EntradaAoRolar atraso={0.1}>
+          <section className="mt-12">
+            <h2 className="font-display text-h3 uppercase text-branco">
+              Quanto custa {servico.nome.toLowerCase()}?
+            </h2>
+            <p className="mt-4 max-w-[68ch] text-corpo leading-[1.65] text-aco">
+              O preço depende do que a inspeção encontra, da peça que precisa de reparo ou troca e do
+              modelo do carro. A gente testa antes de falar em valor e manda o orçamento pelo WhatsApp,
+              sem compromisso.
+            </p>
+          </section>
+        </EntradaAoRolar>
 
-        <section className="mt-12">
-          <h2 className="font-display text-h3 uppercase text-branco">Perguntas frequentes</h2>
-          <div className="mt-4 flex flex-col gap-6">
-            {servico.perguntas.map((item) => (
-              <div key={item.pergunta}>
-                <h3 className="text-corpo-lg font-medium text-branco">{item.pergunta}</h3>
-                <p className="mt-1 text-corpo leading-[1.65] text-aco">{item.resposta}</p>
-              </div>
-            ))}
-          </div>
-        </section>
+        <EntradaAoRolar atraso={0.15}>
+          <section className="mt-12">
+            <h2 className="font-display text-h3 uppercase text-branco">Perguntas frequentes</h2>
+            <div className="mt-4 flex flex-col gap-6">
+              {servico.perguntas.map((item) => (
+                <div key={item.pergunta}>
+                  <h3 className="text-corpo-lg font-medium text-branco">{item.pergunta}</h3>
+                  <p className="mt-1 text-corpo leading-[1.65] text-aco">{item.resposta}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        </EntradaAoRolar>
 
         <div className="mt-12">
           <Button size="lg" asChild>

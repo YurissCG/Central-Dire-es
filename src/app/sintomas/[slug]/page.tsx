@@ -6,6 +6,7 @@ import { SINTOMAS } from "@/content/sintomas";
 import { SERVICOS } from "@/content/servicos";
 import { NEGOCIO } from "@/content/negocio";
 import { Button } from "@/components/ui/button";
+import { EntradaAoRolar } from "@/components/motion/EntradaAoRolar";
 import { linkWhatsApp } from "@/lib/whatsapp";
 import { schemaBreadcrumb } from "@/lib/schema";
 import { cn } from "@/lib/utils";
@@ -74,52 +75,60 @@ export default async function PaginaSintoma({ params }: PaginaProps) {
 
         <p className="mt-6 max-w-[68ch] text-corpo-lg leading-[1.65] text-aco">{sintoma.respostaDireta}</p>
 
-        <section className="mt-12">
-          <h2 className="font-display text-h3 uppercase text-branco">Causas mais comuns</h2>
-          <ul className="mt-4 flex flex-col gap-3">
-            {sintoma.causasComuns.map((causa) => (
-              <li key={causa} className="flex gap-3 text-corpo leading-[1.65] text-aco">
-                <span className="mt-2.5 size-1.5 shrink-0 rounded-full bg-amarelo" aria-hidden="true" />
-                {causa}
-              </li>
-            ))}
-          </ul>
-        </section>
+        <EntradaAoRolar atraso={0}>
+          <section className="mt-12">
+            <h2 className="font-display text-h3 uppercase text-branco">Causas mais comuns</h2>
+            <ul className="mt-4 flex flex-col gap-3">
+              {sintoma.causasComuns.map((causa) => (
+                <li key={causa} className="flex gap-3 text-corpo leading-[1.65] text-aco">
+                  <span className="mt-2.5 size-1.5 shrink-0 rounded-full bg-amarelo" aria-hidden="true" />
+                  {causa}
+                </li>
+              ))}
+            </ul>
+          </section>
+        </EntradaAoRolar>
 
-        <section className="mt-12">
-          <h2 className="font-display text-h3 uppercase text-branco">O que fazer agora</h2>
-          <ul className="mt-4 flex flex-col gap-3">
-            {sintoma.oQueFazerAgora.map((item) => (
-              <li key={item} className="flex gap-3 text-corpo leading-[1.65] text-aco">
-                <span className="mt-2.5 size-1.5 shrink-0 rounded-full bg-amarelo" aria-hidden="true" />
-                {item}
-              </li>
-            ))}
-          </ul>
-        </section>
+        <EntradaAoRolar atraso={0.05}>
+          <section className="mt-12">
+            <h2 className="font-display text-h3 uppercase text-branco">O que fazer agora</h2>
+            <ul className="mt-4 flex flex-col gap-3">
+              {sintoma.oQueFazerAgora.map((item) => (
+                <li key={item} className="flex gap-3 text-corpo leading-[1.65] text-aco">
+                  <span className="mt-2.5 size-1.5 shrink-0 rounded-full bg-amarelo" aria-hidden="true" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </section>
+        </EntradaAoRolar>
 
-        <section className="mt-12 flex items-start gap-3 bg-amarelo p-4">
-          <AlertTriangle aria-hidden="true" className="mt-0.5 size-5 shrink-0 text-preto-oficina" />
-          <div>
-            <h2 className="etiqueta text-preto-oficina">Quando é urgente</h2>
-            <p className="mt-1 text-corpo font-medium text-preto-oficina">{sintoma.urgencia}</p>
-          </div>
-        </section>
+        <EntradaAoRolar atraso={0.1}>
+          <section className="mt-12 flex items-start gap-3 bg-amarelo p-4">
+            <AlertTriangle aria-hidden="true" className="mt-0.5 size-5 shrink-0 text-preto-oficina" />
+            <div>
+              <h2 className="etiqueta text-preto-oficina">Quando é urgente</h2>
+              <p className="mt-1 text-corpo font-medium text-preto-oficina">{sintoma.urgencia}</p>
+            </div>
+          </section>
+        </EntradaAoRolar>
 
         {servico && (
-          <section className="mt-12">
-            <h2 className="font-display text-h3 uppercase text-branco">Serviço relacionado</h2>
-            <Link
-              href={`/servicos/${servico.slug}`}
-              className={cn(
-                "superficie mt-4 flex w-fit flex-col gap-1 px-5 py-4 transition-colors hover:border-amarelo",
-                FOCO,
-              )}
-            >
-              <span className="text-corpo-lg text-branco">{servico.nome}</span>
-              <span className="text-corpo text-aco">{servico.resumo}</span>
-            </Link>
-          </section>
+          <EntradaAoRolar atraso={0.15}>
+            <section className="mt-12">
+              <h2 className="font-display text-h3 uppercase text-branco">Serviço relacionado</h2>
+              <Link
+                href={`/servicos/${servico.slug}`}
+                className={cn(
+                  "superficie mt-4 flex w-fit flex-col gap-1 px-5 py-4 transition-colors hover:border-amarelo",
+                  FOCO,
+                )}
+              >
+                <span className="text-corpo-lg text-branco">{servico.nome}</span>
+                <span className="text-corpo text-aco">{servico.resumo}</span>
+              </Link>
+            </section>
+          </EntradaAoRolar>
         )}
 
         <div className="mt-12">

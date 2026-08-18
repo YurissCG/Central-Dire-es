@@ -4,6 +4,7 @@ import { ProvaSocial } from "@/components/secoes/ProvaSocial";
 import { GradeServicos } from "@/components/secoes/GradeServicos";
 import { ComoFunciona } from "@/components/secoes/ComoFunciona";
 import { Localizacao } from "@/components/secoes/Localizacao";
+import { EntradaAoRolar } from "@/components/motion/EntradaAoRolar";
 
 export default function Home() {
   return (
@@ -11,7 +12,9 @@ export default function Home() {
       <Hero />
       <div className="faixa-zebrada" aria-hidden="true" />
       <PainelDiagnostico />
-      <ProvaSocial />
+      <EntradaAoRolar>
+        <ProvaSocial />
+      </EntradaAoRolar>
       <div className="faixa-zebrada" aria-hidden="true" />
       <div className="bg-grafite">
         <GradeServicos />
@@ -20,7 +23,9 @@ export default function Home() {
         <ComoFunciona />
       </div>
       <div className="faixa-zebrada" aria-hidden="true" />
-      <Localizacao />
+      <EntradaAoRolar>
+        <Localizacao />
+      </EntradaAoRolar>
     </>
   );
 }
