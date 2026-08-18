@@ -7,10 +7,12 @@ export const IMAGENS = {
   hero: "/fotos/temporarias/hero-direcao.jpg",
   texturaMetal: "/fotos/temporarias/textura-metal.jpg",
   comoFunciona: "/fotos/temporarias/oficina-ambiente.jpg",
-  // Mascote ilustrado gerado por IA a pedido do cliente, fundo removido e recortado
-  // do banner original (assets-marca/img, fora do controle de versão). Elemento
+  // Banner e video ilustrados gerados por IA a pedido do cliente, recortados
+  // do material original (assets-marca/img, fora do controle de versão). Elemento
   // decorativo de marca, nao substitui foto real da equipe (ver src/content/equipe.ts).
-  mascoteEquipe: "/marca/mascote-equipe.png",
+  bannerEquipe: "/marca/banner-equipe.jpg",
+  videoEquipe: "/marca/equipe-video.mp4",
+  videoEquipePoster: "/marca/equipe-video-poster.jpg",
   servicos: {
     "direcao-hidraulica": "/fotos/temporarias/servico-direcao-hidraulica.jpg",
     "caixa-de-direcao-remanufaturada": "/fotos/temporarias/servico-caixa-de-direcao-remanufaturada.jpg",

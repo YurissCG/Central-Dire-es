@@ -4,12 +4,16 @@ import { ProvaSocial } from "@/components/secoes/ProvaSocial";
 import { GradeServicos } from "@/components/secoes/GradeServicos";
 import { ComoFunciona } from "@/components/secoes/ComoFunciona";
 import { Localizacao } from "@/components/secoes/Localizacao";
+import { BannerEquipe } from "@/components/secoes/BannerEquipe";
 import { EntradaAoRolar } from "@/components/motion/EntradaAoRolar";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <EntradaAoRolar>
+        <BannerEquipe />
+      </EntradaAoRolar>
       <div className="faixa-zebrada" aria-hidden="true" />
       <PainelDiagnostico />
       <EntradaAoRolar>
