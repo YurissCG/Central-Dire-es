@@ -61,18 +61,6 @@ export function Hero() {
           <span aria-hidden="true">·</span>
           <span>Seg a sex, 8h às 18h</span>
         </div>
-
-        <div className="flex justify-center" aria-hidden="true">
-          <video
-            src={IMAGENS.videoEquipe}
-            poster={IMAGENS.videoEquipePoster}
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="h-[220px] w-auto rounded-lg object-cover drop-shadow-[0_16px_28px_rgba(0,0,0,0.55)] sm:h-[260px] md:h-[320px] lg:h-[380px]"
-          />
-        </div>
       </div>
     </section>
   );
