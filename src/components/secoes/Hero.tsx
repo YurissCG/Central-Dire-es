@@ -66,8 +66,9 @@ export function Hero() {
           <Image
             src={IMAGENS.mascoteEquipe}
             alt=""
-            width={768}
-            height={700}
+            width={395}
+            height={360}
+            sizes="(min-width: 1024px) 395px, (min-width: 768px) 330px, (min-width: 640px) 264px, 220px"
             className="h-[200px] w-auto drop-shadow-[0_16px_28px_rgba(0,0,0,0.55)] sm:h-[240px] md:h-[300px] lg:h-[360px]"
           />
         </div>
