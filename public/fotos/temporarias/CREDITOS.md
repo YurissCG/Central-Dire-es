@@ -6,3 +6,4 @@ Todo arquivo aqui é temporário e sai quando as fotos oficiais da oficina chega
 |---|---|---|---|---|
 | hero-direcao.jpg | Unsplash | Salvatore Tonnara | https://unsplash.com/photos/a-man-working-on-a-car-engine-with-a-wrench-vvmIhgAlBk0 | 2026-08-17 |
 | textura-metal.jpg | Unsplash | engin akyurt | https://unsplash.com/photos/a-close-up-of-a-grey-surface-kRO-eKzSonM | 2026-08-18 |
+| oficina-ambiente.jpg | Unsplash | Connor Botts | https://unsplash.com/photos/wacb2ChxA4k | 2026-08-18 |

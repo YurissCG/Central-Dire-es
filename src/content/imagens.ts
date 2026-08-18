@@ -4,4 +4,5 @@
 export const IMAGENS = {
   hero: "/fotos/temporarias/hero-direcao.jpg",
   texturaMetal: "/fotos/temporarias/textura-metal.jpg",
+  comoFunciona: "/fotos/temporarias/oficina-ambiente.jpg",
 } as const;
