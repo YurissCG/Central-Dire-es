@@ -2,13 +2,14 @@ import Image from "next/image";
 import { MessageCircle, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { NEGOCIO } from "@/content/negocio";
+import { IMAGENS } from "@/content/imagens";
 import { linkLigar, linkWhatsApp } from "@/lib/whatsapp";
 
 export function Hero() {
   return (
     <section className="relative isolate flex min-h-[560px] items-end overflow-hidden md:min-h-[680px]">
       <Image
-        src="/fotos/temporarias/hero-direcao.jpg"
+        src={IMAGENS.hero}
         alt=""
         aria-hidden="true"
         fill
