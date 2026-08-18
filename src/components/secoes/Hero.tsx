@@ -61,6 +61,16 @@ export function Hero() {
           <span aria-hidden="true">·</span>
           <span>Seg a sex, 8h às 18h</span>
         </div>
+
+        <div className="flex justify-center" aria-hidden="true">
+          <Image
+            src={IMAGENS.mascoteEquipe}
+            alt=""
+            width={768}
+            height={700}
+            className="h-[200px] w-auto drop-shadow-[0_16px_28px_rgba(0,0,0,0.55)] sm:h-[240px] md:h-[300px] lg:h-[360px]"
+          />
+        </div>
       </div>
     </section>
   );

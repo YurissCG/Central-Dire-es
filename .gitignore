@@ -44,6 +44,10 @@ next-env.d.ts
 central-direcoes-base.zip
 instagram feed.pdf
 logo.png
+/assets-marca
 
 # worktrees locais de desenvolvimento
 /.worktrees
+
+# config local do Claude Code, não é do projeto
+/.claude
