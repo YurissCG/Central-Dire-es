@@ -178,6 +178,40 @@ O elemento assinatura. Faça com calma, é o que vende o site.
 
 ---
 
+## Refresh visual, 2026-08-18
+
+Rodada de ajustes pós-entrega, a pedido do dono do projeto (site muito escuro, pouca
+identidade de marca, pouco movimento). Spec e plano completos:
+`docs/superpowers/specs/2026-08-18-refresh-visual-vivo-design.md` e
+`docs/superpowers/plans/2026-08-18-refresh-visual-vivo.md`. Cobriu: paleta mais viva,
+hero mais claro, logo no header, mais fotos de banco público (grade de serviços,
+como funciona, páginas de serviço), reintrodução da lib `motion` (menu, accordion de
+dúvidas, hover na grade, entrada `whileInView`), espaço estruturado para fotos reais
+da equipe em `/sobre` (`src/content/equipe.ts`, vazio até o cliente enviar) e um
+mascote ilustrado no hero da home como reforço de marca (`public/marca/`).
+
+**Auditoria final (Lighthouse mobile, `--throttling-method=devtools`, servidor de
+produção local):**
+
+| Página | Performance | Acessibilidade | Boas práticas | SEO | LCP | CLS |
+|---|---|---|---|---|---|---|
+| `/` | 98 | 100 | 100 | 100 | 2,30s | 0,000 |
+| `/servicos/direcao-hidraulica` | 100 | 100 | 100 | 100 | 1,54s | 0,000 |
+| `/sintomas/volante-pesado` | 100 | 100 | 100 | 100 | 1,53s | 0,000 |
+| `/duvidas` | 99 | 100 | 100 | 100 | 1,55s | 0,000 |
+| `/orcamento` | 100 | 100 | 100 | 100 | 1,54s | 0,022 |
+
+Acessibilidade 100 em todas, LCP abaixo de 2,5s em todas. Na primeira rodada o mascote
+do hero levou a home a 2,60s de LCP porque a imagem usava as dimensões da fonte
+(768x700) sem `sizes`, forçando o navegador a baixar a variante de 1920w mesmo em
+mobile; corrigido em `src/components/secoes/Hero.tsx` com `width`/`height` do maior
+breakpoint renderizado e `sizes` por faixa.
+
+Sweep de overflow horizontal em 360px (`scripts/full-sweep.mjs`, Playwright) nas 24
+rotas do sitemap: 24/24 sem `scrollWidth > clientWidth`.
+
+---
+
 ## Sequência de troca das imagens
 
 Fora do caminho crítico, mas obrigatório antes de considerar o projeto encerrado. Ver `docs/09-imagens-e-midia.md` seção 9.10.

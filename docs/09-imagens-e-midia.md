@@ -52,16 +52,18 @@ Consequência prática: as seções `/sobre` e `Prova social` ficam **sem foto**
 
 Em inglês rende muito mais resultado nesses bancos.
 
-| Onde | Buscar por |
-|---|---|
-| Hero | `car steering rack`, `power steering pump`, `dark auto workshop`, `mechanic hands wrench dark` |
-| Direção hidráulica | `power steering pump`, `hydraulic hose car`, `steering rack repair` |
-| Caixa remanufaturada | `rebuilt car part`, `disassembled steering rack`, `machined metal part` |
-| Suspensão | `car suspension coil spring`, `shock absorber` |
-| Alinhamento | `wheel alignment machine`, `tire tread close up` |
-| Freios | `brake disc rotor`, `brake pad` |
-| Sintoma de vibração | `steering wheel close up`, `car dashboard warning light` |
-| Textura de fundo | `brushed steel texture dark`, `metal plate industrial` |
+| Onde | Buscar por | Usado? |
+|---|---|---|
+| Hero | `car steering rack`, `power steering pump`, `dark auto workshop`, `mechanic hands wrench dark` | Sim, Tarefa 4 (`hero-direcao.jpg`) |
+| Direção hidráulica | `power steering pump`, `hydraulic hose car`, `steering rack repair` | Sim, Tarefa 9 (`servico-direcao-hidraulica.jpg`) |
+| Caixa remanufaturada | `rebuilt car part`, `disassembled steering rack`, `machined metal part` | Sim, Tarefa 9 (`servico-caixa-de-direcao-remanufaturada.jpg`) |
+| Direção mecânica | `steering gear mechanism`, `machine gears close up` | Sim, Tarefa 9 (`servico-direcao-mecanica.jpg`) |
+| Suspensão | `car suspension coil spring`, `shock absorber` | Sim, Tarefa 9 (`servico-suspensao.jpg`) |
+| Alinhamento | `wheel alignment machine`, `tire tread close up` | Sim, Tarefa 9 (`servico-alinhamento-e-balanceamento.jpg`) |
+| Freios | `brake disc rotor`, `brake pad` | Sim, Tarefa 9 (`servico-freios.jpg`) |
+| Revisão preventiva | `car dashboard warning light`, `car checkup inspection` | Sim, Tarefa 9 (`servico-revisao-preventiva.jpg`) |
+| Sintoma de vibração | `steering wheel close up`, `car dashboard warning light` | Não, livre para uso futuro (páginas de sintoma ainda sem imagem, fora do escopo do refresh de 2026-08-18) |
+| Textura de fundo | `brushed steel texture dark`, `metal plate industrial` | Sim, Tarefa 7 (`textura-metal.jpg`) |
 
 Critério de escolha, nesta ordem: imagem escura ou com espaço escuro para o texto branco cair em cima; sem gente de rosto visível; sem legenda ou marca dentro da foto; enquadramento que sobreviva ao recorte em 16:9 e em 1:1.
 
