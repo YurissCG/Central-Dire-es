@@ -10,19 +10,17 @@ export default function Home() {
     <>
       <Hero />
       <div className="faixa-zebrada" aria-hidden="true" />
-      <div className="bg-grafite">
-        <PainelDiagnostico />
-      </div>
+      <PainelDiagnostico />
       <ProvaSocial />
       <div className="faixa-zebrada" aria-hidden="true" />
       <div className="bg-grafite">
         <GradeServicos />
       </div>
-      <ComoFunciona />
-      <div className="faixa-zebrada" aria-hidden="true" />
       <div className="bg-grafite">
-        <Localizacao />
+        <ComoFunciona />
       </div>
+      <div className="faixa-zebrada" aria-hidden="true" />
+      <Localizacao />
     </>
   );
 }
