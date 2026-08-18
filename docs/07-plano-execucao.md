@@ -157,24 +157,24 @@ O elemento assinatura. Faça com calma, é o que vende o site.
 
 ### Tarefa 14. Deploy
 
-- [ ] Repositório no GitHub
-- [ ] Projeto na Vercel, build de produção passando
-- [ ] Domínio apontado, HTTPS ativo, redirecionamento de www para raiz ou o contrário, escolha uma versão e mantenha
-- [ ] Trocar o placeholder de domínio pelo real e refazer o build
+- [x] Repositório no GitHub (`github.com/YurissCG/Central-Dire-es`, todo o histórico de commits da Fase 1 a 4)
+- [ ] Projeto na Vercel, build de produção passando — **aguardando o dono do projeto conectar a conta Vercel** (repositório já está pronto pra importar, `npm run build` já passa limpo)
+- [ ] Domínio apontado, HTTPS ativo, redirecionamento de www para raiz ou o contrário, escolha uma versão e mantenha — depende do domínio ser registrado, ver pendência no doc 01 seção 1.8
+- [ ] Trocar o placeholder de domínio pelo real (`src/content/negocio.ts`, campo `dominio`, é o único lugar) e refazer o build
 
 ### Tarefa 15. Search Console e SEO local
 
-- [ ] Passo a passo do doc 05 seção 5.10, na conta do cliente
+- [ ] Passo a passo do doc 05 seção 5.10, na conta do cliente — **bloqueado**: exige acesso à conta Google do cliente, que só ele tem
 - [ ] Sitemap enviado, indexação pedida nas 4 páginas principais
 - [ ] Bing Webmaster Tools importado do Search Console
-- [ ] Checklist do Google Business Profile do doc 06 seção 6.3
-- [ ] PageSpeed Insights em mobile, registrar o número obtido
+- [ ] Checklist do Google Business Profile do doc 06 seção 6.3 — **bloqueado**: exige acesso ao Google Business Profile do cliente
+- [ ] PageSpeed Insights em mobile, registrar o número obtido — precisa do domínio no ar. Auditoria local no Lighthouse já feita na Tarefa 13 (99-100 em Performance em todas as páginas testadas)
 
 ### Tarefa 16. Entrega
 
-- [ ] `docs/08-entrega-e-qa.md` inteiro percorrido
-- [ ] Documento de uma página para o cliente: o que ele recebeu, os acessos, e as três recomendações de avaliação do doc 06 seção 6.4
-- [ ] Transferência de acesso: domínio, Vercel, Search Console, no nome do cliente
+- [x] `docs/08-entrega-e-qa.md` percorrido no que não depende do domínio no ar: 8.1 build e código, 8.2 linguagem, 8.3 mobile (Tarefas 5-10), 8.4 acessibilidade (Lighthouse 100 em todas as páginas testadas), 8.5 SEO (title/description únicos, canonical, JSON-LD válido), 8.6 performance (Tarefa 13), 8.7 conversão (testado ponta a ponta: sintoma → CTA e painel → CTA, com origem e sintoma corretos na mensagem), 8.8 imagens (corrigido: caminho da imagem do hero centralizado em `src/content/imagens.ts`). Itens que dependem do domínio (8.5 links de OG colados no WhatsApp real, 8.6 PageSpeed Insights) ficam para depois do deploy
+- [x] Documento de uma página para o cliente: `docs/10-entrega-ao-cliente.md`
+- [ ] Transferência de acesso: domínio, Vercel, Search Console, no nome do cliente — depende das Tarefas 14 e 15
 
 ---
 
