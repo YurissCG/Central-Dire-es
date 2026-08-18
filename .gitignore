@@ -44,3 +44,6 @@ next-env.d.ts
 central-direcoes-base.zip
 instagram feed.pdf
 logo.png
+
+# worktrees locais de desenvolvimento
+/.worktrees
