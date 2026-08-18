@@ -40,7 +40,9 @@ export function ItemGradeServico({ servico }: { servico: Servico }) {
               <ArrowRight aria-hidden="true" className="size-4 text-vermelho" />
             </motion.span>
           </span>
-          <span className="max-w-[60ch] text-corpo leading-[1.65] text-aco">{servico.resumo}</span>
+          <span className="line-clamp-2 max-w-[60ch] text-corpo leading-[1.65] text-aco md:line-clamp-none">
+            {servico.resumo}
+          </span>
         </div>
       </Link>
     </motion.div>

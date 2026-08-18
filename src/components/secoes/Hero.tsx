@@ -5,7 +5,7 @@ import { linkLigar, linkWhatsApp } from "@/lib/whatsapp";
 
 export function Hero() {
   return (
-    <section id="hero" className="mx-auto w-full max-w-[1200px] px-5 py-10 md:py-16">
+    <section id="hero" className="mx-auto w-full max-w-[1200px] px-5 py-16 md:py-24">
       <div className="flex w-full flex-col gap-6">
         <p className="etiqueta text-amarelo">São Benedito, Santa Luzia, MG</p>
 

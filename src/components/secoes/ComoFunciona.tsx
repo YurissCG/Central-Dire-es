@@ -5,8 +5,8 @@ import { IMAGENS } from "@/content/imagens";
 const PASSOS = [
   { numero: "01", texto: "Você chega ou manda mensagem" },
   { numero: "02", texto: "A gente inspeciona e mostra o que achou" },
-  { numero: "03", texto: "Orçamento antes de começar" },
-  { numero: "04", texto: "Serviço feito e testado" },
+  { numero: "03", texto: "Orçamento por escrito antes de começar" },
+  { numero: "04", texto: "Serviço feito e peça velha devolvida na sua mão" },
 ];
 
 export function ComoFunciona() {
