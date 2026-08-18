@@ -1,14 +1,26 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 import { SERVICOS } from "@/content/servicos";
 import { SINTOMAS } from "@/content/sintomas";
 import { NEGOCIO } from "@/content/negocio";
+import { IMAGENS } from "@/content/imagens";
 import { Button } from "@/components/ui/button";
 import { linkWhatsApp } from "@/lib/whatsapp";
 import { schemaBreadcrumb, schemaServico } from "@/lib/schema";
 import { cn } from "@/lib/utils";
+
+const ALT_SERVICOS: Record<string, string> = {
+  "direcao-hidraulica": "Motor desmontado com mangueiras e componentes do sistema hidráulico à mostra",
+  "caixa-de-direcao-remanufaturada": "Engrenagens e peças mecânicas desmontadas, prontas para inspeção",
+  "direcao-mecanica": "Engrenagens de precisão de um mecanismo de direção",
+  suspensao: "Mola de suspensão de carro em close-up",
+  "alinhamento-e-balanceamento": "Desenho da banda de rodagem de um pneu em close-up",
+  freios: "Pinça e disco de freio em detalhe",
+  "revisao-preventiva": "Painel do carro com luz de aviso acesa",
+};
 
 const FOCO =
   "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amarelo";
@@ -78,6 +90,18 @@ export default async function PaginaServico({ params }: PaginaProps) {
         </h1>
 
         <p className="mt-6 max-w-[68ch] text-corpo-lg leading-[1.65] text-aco">{servico.respostaDireta}</p>
+
+        <div className="superficie relative mt-8 aspect-[16/9] w-full max-w-[720px] overflow-hidden">
+          <Image
+            src={IMAGENS.servicos[servico.slug]}
+            alt={ALT_SERVICOS[servico.slug]}
+            fill
+            loading="lazy"
+            sizes="(min-width: 768px) 720px, 100vw"
+            className="object-cover"
+            style={{ filter: "saturate(0.75) contrast(1.08) brightness(0.85)" }}
+          />
+        </div>
 
         {sintomas.length > 0 && (
           <section className="mt-12">
