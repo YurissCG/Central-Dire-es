@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { DUVIDAS } from "@/content/duvidas";
 import { NEGOCIO } from "@/content/negocio";
 import { schemaBreadcrumb, schemaFaq } from "@/lib/schema";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { MotionAccordion } from "@/components/unlumen-ui/motion-faqs-accordion";
 
 export const metadata: Metadata = {
   title: "Dúvidas Frequentes Sobre Direção e Suspensão",
@@ -39,18 +39,10 @@ export default function PaginaDuvidas() {
         </p>
 
         <h2 className="mt-10 font-display text-h3 uppercase text-branco">Perguntas frequentes</h2>
-        <Accordion type="single" collapsible className="mt-4 max-w-[68ch]">
-          {DUVIDAS.map((item) => (
-            <AccordionItem key={item.slug} value={item.slug} className="border-grafite-borda">
-              <AccordionTrigger className="text-corpo-lg text-branco hover:no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amarelo [&_svg]:text-amarelo">
-                {item.pergunta}
-              </AccordionTrigger>
-              <AccordionContent className="text-corpo leading-[1.65] text-aco">
-                {item.resposta}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+        <MotionAccordion
+          items={DUVIDAS.map((item) => ({ question: item.pergunta, answer: item.resposta }))}
+          className="mt-4 max-w-[68ch]"
+        />
       </div>
     </>
   );
