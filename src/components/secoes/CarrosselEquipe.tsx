@@ -15,7 +15,7 @@ export function CarrosselEquipe() {
   const [extrasProntos, setExtrasProntos] = useState(false);
 
   useEffect(() => {
-    const id = setTimeout(() => setExtrasProntos(true), 800);
+    const id = setTimeout(() => setExtrasProntos(true), 1800);
     return () => clearTimeout(id);
   }, []);
 
@@ -63,7 +63,8 @@ export function CarrosselEquipe() {
                 priority={indice === 0}
                 loading={indice === 0 ? undefined : "lazy"}
                 sizes="100vw"
-                className="object-cover object-[50%_25%]"
+                quality={indice === 0 ? 40 : 65}
+                className="object-cover"
                 style={{ filter: "saturate(0.7) contrast(1.05) brightness(0.82)" }}
               />
             )}
