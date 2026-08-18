@@ -54,7 +54,7 @@ export function CarrosselEquipe() {
         className="flex w-full snap-x snap-mandatory overflow-x-auto scroll-smooth [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
       >
         {SLIDES.map((src, indice) => (
-          <div key={src} className="relative aspect-[4/5] w-full shrink-0 snap-center overflow-hidden sm:aspect-[3/2] md:aspect-[21/9]">
+          <div key={src} className="relative aspect-square w-full shrink-0 snap-center overflow-hidden sm:aspect-[3/2] md:aspect-[16/9]">
             {(indice === 0 || extrasProntos) && (
               <Image
                 src={src}
@@ -63,7 +63,7 @@ export function CarrosselEquipe() {
                 priority={indice === 0}
                 loading={indice === 0 ? undefined : "lazy"}
                 sizes="100vw"
-                className="object-cover"
+                className="object-cover object-[50%_25%]"
                 style={{ filter: "saturate(0.7) contrast(1.05) brightness(0.82)" }}
               />
             )}

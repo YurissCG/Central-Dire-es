@@ -22,7 +22,7 @@ export function Hero() {
           peça nova.
         </p>
 
-        <div className="flex flex-wrap gap-3">
+        <div id="hero-cta" className="flex flex-wrap gap-3">
           <Button size="lg" asChild>
             <a href={linkWhatsApp("hero")}>
               <MessageCircle aria-hidden="true" />
