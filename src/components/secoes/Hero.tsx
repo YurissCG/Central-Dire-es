@@ -16,9 +16,9 @@ export function Hero() {
         priority
         sizes="100vw"
         className="object-cover object-center"
-        style={{ filter: "saturate(0.75) contrast(1.08) brightness(0.85)" }}
+        style={{ filter: "saturate(0.85) contrast(1.05)" }}
       />
-      <div className="absolute inset-0 bg-preto-oficina/70" aria-hidden="true" />
+      <div className="absolute inset-0 bg-preto-oficina/45" aria-hidden="true" />
 
       <div className="relative z-10 mx-auto flex w-full max-w-[1200px] flex-col gap-6 px-5 py-12 md:py-20">
         <p className="etiqueta text-amarelo">São Benedito, Santa Luzia, MG</p>
